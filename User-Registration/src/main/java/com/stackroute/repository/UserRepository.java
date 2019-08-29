@@ -1,4 +1,7 @@
 package com.stackroute.repository;
 
-public class UserRepository {
+import com.stackroute.domain.UserDetails;
+import org.springframework.data.mongodb.repository.MongoRepository;
+
+public interface UserRepository extends MongoRepository<UserDetails,String> {
 }

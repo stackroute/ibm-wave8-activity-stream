@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fd2c47c0-a65d-4b76-9312-48e1873cc946" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/User-Registration/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/User-Registration/src/main/java/com/stackroute/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/User-Registration/src/main/java/com/stackroute/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/User-Registration/src/main/java/com/stackroute/domain/UserDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/User-Registration/src/main/java/com/stackroute/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/User-Registration/src/main/java/com/stackroute/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/User-Registration/src/main/java/com/stackroute/service/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/User-Registration/src/test/java/com/stackroute/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Twitter-Microservice/twitterMicroservice.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Registration/src/main/java/com/stackroute/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Registration/src/main/java/com/stackroute/repository/UserRepository.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
