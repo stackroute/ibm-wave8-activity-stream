@@ -2,13 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fd2c47c0-a65d-4b76-9312-48e1873cc946" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/User-Registration/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/User-Registration/src/main/java/com/stackroute/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/User-Registration/src/main/java/com/stackroute/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/User-Registration/src/main/java/com/stackroute/domain/UserDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/User-Registration/src/main/java/com/stackroute/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/User-Registration/src/main/java/com/stackroute/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/User-Registration/src/main/java/com/stackroute/service/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/User-Registration/src/test/java/com/stackroute/AppTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Twitter-Microservice/twitterMicroservice.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -21,8 +40,12 @@
     </option>
   </component>
   <component name="ProjectId" id="1Q3tCuGacPKgxDOWnkFvYT02Xlo" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="11" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
@@ -128,10 +151,15 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

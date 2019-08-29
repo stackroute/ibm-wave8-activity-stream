@@ -7,7 +7,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="SentimentAnalysisService" />
+        <module name="twitterMicroservice" />
         <module name="UpstreamMicroservice" />
+        <module name="upstream-microservice" />
+        <module name="Data-Cleaning" />
+        <module name="Sentiment-Analysis-Service" />
+        <module name="Downstream-Microservices" />
+        <module name="User-Registration" />
         <module name="DownstreamMicroservice" />
         <module name="DataCleaningMicroservice" />
         <module name="TwitterMicroservice" />

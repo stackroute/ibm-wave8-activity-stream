@@ -11,6 +11,7 @@
     <module>Downstream-Microservice</module>
     <module>Data-Cleaning-Microservice</module>
     <module>Sentiment-Analysis-Service</module>
+      <module>User-Registration</module>
   </modules>
   <groupId>com.stackroute</groupId>
   <artifactId>activity-streaming-platform</artifactId>
