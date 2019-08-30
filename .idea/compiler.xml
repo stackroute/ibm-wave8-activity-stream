@@ -6,17 +6,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="User-Registration" />
         <module name="SentimentAnalysisService" />
         <module name="twitterMicroservice" />
-        <module name="UpstreamMicroservice" />
         <module name="upstream-microservice" />
-        <module name="Data-Cleaning" />
-        <module name="Sentiment-Analysis-Service" />
-        <module name="Downstream-Microservices" />
-        <module name="User-Registration" />
-        <module name="DownstreamMicroservice" />
-        <module name="DataCleaningMicroservice" />
         <module name="TwitterMicroservice" />
+        <module name="DownstreamMicroservice" />
+        <module name="UpstreamMicroservice" />
+        <module name="Sentiment-Analysis-Service" />
+        <module name="Data-Cleaning" />
+        <module name="DataCleaningMicroservice" />
+        <module name="Downstream-Microservices" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

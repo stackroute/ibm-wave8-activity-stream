@@ -1,6 +1,8 @@
 package com.stackroute.service;
 
 import com.stackroute.domain.UserDetails;
+import com.stackroute.exceptions.UserAlreadyExists;
+import com.stackroute.exceptions.UserNotFound;
 import com.stackroute.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -16,14 +18,30 @@ public class UserServiceImpl implements UserService {
         this.userRepository = userRepository;
     }
     @Override
-    public UserDetails saveUser(UserDetails userDetails){
-        UserDetails saveDetails=userRepository.save(userDetails);
+    public UserDetails saveUser(UserDetails userDetails) throws UserAlreadyExists {
+        UserDetails saveDetails;
+        Optional optional=userRepository.findById(userDetails.getUsername());
+        if((optional.isPresent())){
+            throw new UserAlreadyExists("User Already Registered");
+        }
+
+        else {
+            saveDetails = userRepository.save(userDetails);
+        }
         return saveDetails;
     }
     @Override
-    public boolean deleteUserByName(String username) {
-        userRepository.delete(getUserByName(username));
-        return true;
+    public boolean deleteUserByName(String username) throws UserNotFound {
+        boolean status = false;
+        Optional optional = userRepository.findById(username);
+        if(optional.isPresent()) {
+            userRepository.delete(getUserByName(username));
+            status = true;
+        }
+        else{
+            throw new UserNotFound("User Doesnt exists");
+        }
+        return status;
     }
 
     @Override
