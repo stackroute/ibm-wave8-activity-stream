@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fd2c47c0-a65d-4b76-9312-48e1873cc946" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/User-Registration/src/main/java/com/stackroute/exceptions/UserAlreadyExists.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/User-Registration/src/main/java/com/stackroute/exceptions/UserNotFound.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/User-Registration/src/main/java/com/stackroute/Controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Registration/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/User-Registration/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,6 +17,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="AnnotationType" />
       </list>
     </option>
   </component>
@@ -40,6 +41,9 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.stackroute.Controller" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/Twitter-Microservice" />
