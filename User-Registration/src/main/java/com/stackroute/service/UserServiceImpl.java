@@ -1,15 +1,12 @@
 package com.stackroute.service;
-
 import com.stackroute.domain.UserDetails;
 import com.stackroute.exceptions.UserAlreadyExists;
 import com.stackroute.exceptions.UserNotFound;
 import com.stackroute.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.util.List;
 import java.util.Optional;
-
 @Service
 public class UserServiceImpl implements UserService {
     @Autowired
@@ -43,7 +40,6 @@ public class UserServiceImpl implements UserService {
         }
         return status;
     }
-
     @Override
     public boolean updateUser(UserDetails userDetails) {
         UserDetails updateUser = userRepository.findById(userDetails.getUsername()).get();

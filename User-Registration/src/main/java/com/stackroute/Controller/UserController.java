@@ -1,4 +1,6 @@
 package com.stackroute.Controller;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.stackroute.domain.UserDetails;
 import com.stackroute.exceptions.UserAlreadyExists;
 import com.stackroute.exceptions.UserNotFound;
@@ -6,8 +8,12 @@ import com.stackroute.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @CrossOrigin("*")
 @RestController
@@ -20,8 +26,12 @@ public class UserController {
 
         this.userService = userService;
     }
+    @Autowired
+    private KafkaTemplate<Object, String> kafkaTemplate;
+
+    private static final String TOPIC = "User-Details";
     @PostMapping("user")
-    public ResponseEntity<?> saveUser(@RequestBody UserDetails userDetails) throws UserAlreadyExists {
+    public ResponseEntity<?> saveUser(@RequestBody UserDetails userDetails) throws UserAlreadyExists, JsonProcessingException {
         ResponseEntity responseEntity;
         try {
             userService.saveUser(userDetails);
