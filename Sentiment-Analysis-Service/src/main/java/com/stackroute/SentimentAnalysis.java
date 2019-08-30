@@ -10,9 +10,7 @@ public class SentimentAnalysis {
     public static void main(String[] args) {
         StanfordCoreNLP stanfordCoreNLP = Pipeline.getPipeline();
 
-        String text = "The government on Thursday sought to ease fears in Assam as the deadline for the publication of the final National Register of Citizenship (NRC) approached, reiterating that those excluded will not automatically be declared foreigners and that people should not believe rumours\n" +
-                "\n" +
-                "The administration in Assam also increased security and issued orders banning large assemblies and use of loudspeakers in some areas regarded vulnerable to violence, including parts of the state capital Guwahati. ";
+        String text = "Fake edible oil manufacturing unit busted in Cuttack; one held";
 
         CoreDocument coreDocument = new CoreDocument(text);
 
