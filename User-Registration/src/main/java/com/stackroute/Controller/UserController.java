@@ -35,6 +35,7 @@ public class UserController {
         ResponseEntity responseEntity;
         try {
             userService.saveUser(userDetails);
+            this.kafkaTemplate.send(TOPIC, new ObjectMapper().writeValueAsString(userDetails));
             responseEntity = new ResponseEntity(userDetails, HttpStatus.CREATED);
         } catch (UserAlreadyExists e) {
 
