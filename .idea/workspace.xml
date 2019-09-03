@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fd2c47c0-a65d-4b76-9312-48e1873cc946" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Data-Cleaning-Microservice/src/main/java/com/stackroute/domain/TwitterURL1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data-Cleaning-Microservice/src/main/java/com/stackroute/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Cleaning-Microservice/src/main/java/com/stackroute/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data-Cleaning-Microservice/src/main/java/com/stackroute/domain/Tweet1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data-Cleaning-Microservice/src/main/java/com/stackroute/domain/TwitterURL1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data-Cleaning-Microservice/src/main/java/com/stackroute/domain/User1.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

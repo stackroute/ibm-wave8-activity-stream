@@ -3,6 +3,7 @@ package com.stackroute;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.stackroute.domain.Media1;
 import com.stackroute.domain.Tweet1;
+import com.stackroute.domain.TwitterURL1;
 
 /**
  * Hello world!
@@ -16,5 +17,7 @@ public class App
         media1.mediaFilter();
         Tweet1 tweet1=new Tweet1();
         tweet1.tweetFilter();
+        TwitterURL1 twitterURL1=new TwitterURL1();
+        twitterURL1.twitterURLFilter();
     }
 }
