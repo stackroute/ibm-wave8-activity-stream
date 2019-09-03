@@ -1,16 +1,22 @@
 package com.stackroute;
+
 import edu.stanford.nlp.pipeline.CoreDocument;
 import edu.stanford.nlp.pipeline.CoreSentence;
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
 
-
+import java.io.FileReader;
 import java.util.List;
 
 public class SentimentAnalysis {
-    public static void main(String[] args) {
+   public static void main(String[] args)throws Exception {
         StanfordCoreNLP stanfordCoreNLP = Pipeline.getPipeline();
 
-        String text = "Fake edible oil manufacturing unit busted in Cuttack; one held";
+        JSONObject jsonObject = (JSONObject) readJsonSimpleDemo("/home/clinton/Downloads/Activity-Streaming-Platform/ibm-wave8-activity-stream/Sentiment-Analysis-Microservice/src/main/java/com/stackroute/favorite-tweets.txt");
+
+        String text=(String) jsonObject.get("text");
+//      String text="Good morning folks lets blast the earth";
 
         CoreDocument coreDocument = new CoreDocument(text);
 
@@ -25,5 +31,10 @@ public class SentimentAnalysis {
             System.out.println(sentiment + "\t" + sentence);
 
         }
+    }
+    public static Object readJsonSimpleDemo(String fileName) throws Exception{
+      FileReader reader = new FileReader(fileName);
+      JSONParser jsonParser = new JSONParser();
+      return jsonParser.parse(reader);
     }
 }
