@@ -16,7 +16,6 @@ public class SentimentAnalysis {
         JSONObject jsonObject = (JSONObject) readJsonSimpleDemo("/home/clinton/Downloads/Activity-Streaming-Platform/ibm-wave8-activity-stream/Sentiment-Analysis-Microservice/src/main/java/com/stackroute/favorite-tweets.txt");
 
         String text=(String) jsonObject.get("text");
-//      String text="Good morning folks lets blast the earth";
 
         CoreDocument coreDocument = new CoreDocument(text);
 
