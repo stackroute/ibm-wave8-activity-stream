@@ -4,6 +4,7 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.stackroute.domain.Media1;
 import com.stackroute.domain.Tweet1;
 import com.stackroute.domain.TwitterURL1;
+import com.stackroute.domain.User1;
 
 /**
  * Hello world!
@@ -19,5 +20,8 @@ public class App
         tweet1.tweetFilter();
         TwitterURL1 twitterURL1=new TwitterURL1();
         twitterURL1.twitterURLFilter();
+        User1 user1=new User1();
+        user1.userFilter();
     }
 }
+
