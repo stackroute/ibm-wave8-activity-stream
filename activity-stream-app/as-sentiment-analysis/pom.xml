@@ -9,9 +9,9 @@
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
-  <artifactId>Sentiment-Analysis-Service</artifactId>
+  <artifactId>as-sentiment-analysis</artifactId>
 
-  <name>Sentiment-Analysis-Service</name>
+  <name>as-sentiment-analysis</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
@@ -101,6 +101,9 @@
         <plugin>
           <artifactId>maven-compiler-plugin</artifactId>
           <version>3.8.0</version>
+          <configuration>
+            <release>10</release>
+          </configuration>
         </plugin>
         <plugin>
           <artifactId>maven-surefire-plugin</artifactId>

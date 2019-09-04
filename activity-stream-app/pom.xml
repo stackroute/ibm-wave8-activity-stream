@@ -6,13 +6,12 @@
 
   <packaging>pom</packaging>
   <modules>
-    <module>Twitter-Microservice</module>
-    <module>Upstream-Microservice</module>
-    <module>Downstream-Microservice</module>
-    <module>Data-Cleaning-Microservice</module>
-    <module>Sentiment-Analysis-Microservice</module>
-      <module>User-Registration</module>
-    <module>Login-Authentication-Microservice</module>
+    <module>as-upstream-streaming</module>
+    <module>as-downstream-save</module>
+    <module>as-data-cleaning</module>
+    <module>as-sentiment-analysis</module>
+      <module>as-web-registration</module>
+    <module>as-web-login-auth</module>
   </modules>
   <groupId>com.stackroute</groupId>
   <artifactId>activity-streaming-platform</artifactId>
