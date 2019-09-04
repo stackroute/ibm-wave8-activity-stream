@@ -13,7 +13,7 @@ public class SentimentAnalysis {
    public static void main(String[] args)throws Exception {
         StanfordCoreNLP stanfordCoreNLP = Pipeline.getPipeline();
 
-        JSONObject jsonObject = (JSONObject) readJsonSimpleDemo("/home/clinton/Downloads/Activity-Streaming-Platform/ibm-wave8-activity-stream/Sentiment-Analysis-Microservice/src/main/java/com/stackroute/favorite-tweets.txt");
+        JSONObject jsonObject = (JSONObject) readJsonSimpleDemo("/home/clinton/Videos/ibm-wave8-activity-stream/Sentiment-Analysis-Microservice/src/main/java/com/stackroute/favorite-tweets.txt");
 
         String text=(String) jsonObject.get("text");
 
