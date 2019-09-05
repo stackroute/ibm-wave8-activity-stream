@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Import;
 import javax.annotation.PostConstruct;
 
 @SpringBootApplication
-@Import({ASUpstreamApp.class})
+//@Import({ASUpstreamApp.class})
 public class SpringBootKafkaConsumerExampleApplication {
 
 	public static void main(String[] args) {
