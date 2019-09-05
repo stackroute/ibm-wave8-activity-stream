@@ -6,8 +6,8 @@ com/stackroute/upstream/model/Size.class
 com/stackroute/upstream/service/TweetStreamRunner.class
 com/stackroute/upstream/service/UpstreamPublishService.class
 com/stackroute/upstream/model/UserMention.class
+com/stackroute/upstream/ASUpstreamApp.class
 com/stackroute/upstream/model/HashTag.class
-com/stackroute/upstream/controller/TwitterController.class
 com/stackroute/upstream/model/Coordinates.class
 com/stackroute/upstream/model/TwitterExtendedEntity.class
 com/stackroute/upstream/model/TwitterURL.class

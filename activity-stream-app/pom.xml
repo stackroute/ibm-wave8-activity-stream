@@ -15,7 +15,8 @@
 <!--    <module>as-web-login-auth</module>-->
 <!--    <module>as-web-registration</module>-->
     <module>as-downstream-save</module>
-<!--    <module>as-sentiment-analysis</module>-->
+      <module>mainapp</module>
+      <!--    <module>as-sentiment-analysis</module>-->
 <!--    <module>Login-Authentication-Microservice</module>-->
   </modules>
 
