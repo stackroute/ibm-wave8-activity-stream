@@ -14,7 +14,7 @@
     <module>as-web-login-auth</module>
   </modules>
   <groupId>com.stackroute</groupId>
-  <artifactId>activity-streaming-platform</artifactId>
+  <artifactId>activity-stream-app</artifactId>
   <version>1.0-SNAPSHOT</version>
 
 
