@@ -2,82 +2,26 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.stackroute</groupId>
-  <artifactId>activity-stream-app</artifactId>
-  <version>1.0-SNAPSHOT</version>
 
   <packaging>pom</packaging>
-
   <modules>
     <module>as-upstream-streaming</module>
-<!--    <module>as-web-login-auth</module>-->
-<!--    <module>as-web-registration</module>-->
     <module>as-downstream-save</module>
+
       <module>mainapp</module>
       <!--    <module>as-sentiment-analysis</module>-->
 <!--    <module>Login-Authentication-Microservice</module>-->
+    <module>as-data-cleaning</module>
+    <module>as-sentiment-analysis</module>
+      <module>as-web-registration</module>
+    <module>as-web-login-auth</module>
+
   </modules>
+  <groupId>com.stackroute</groupId>
+  <artifactId>activity-streaming-platform</artifactId>
+  <version>1.0-SNAPSHOT</version>
 
-  <properties>
-    <java.version>1.8</java.version>
-    <spring-boot-version>2.1.7.RELEASE</spring-boot-version>
-  </properties>
 
-  <dependencies>
 
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter</artifactId>
-      <version>${spring-boot-version}</version>
-    </dependency>
-
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-test</artifactId>
-      <scope>test</scope>
-      <version>${spring-boot-version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-web</artifactId>
-      <version>${spring-boot-version}</version>
-    </dependency>
-
-    <!-- https://mvnrepository.com/artifact/org.twitter4j/twitter4j-core -->
-    <dependency>
-      <groupId>org.twitter4j</groupId>
-      <artifactId>twitter4j-core</artifactId>
-      <version>4.0.7</version>
-    </dependency>
-
-    <!-- https://mvnrepository.com/artifact/org.twitter4j/twitter4j-stream -->
-    <dependency>
-      <groupId>org.twitter4j</groupId>
-      <artifactId>twitter4j-stream</artifactId>
-      <version>4.0.7</version>
-    </dependency>
-
-    <dependency>
-      <groupId>org.springframework.kafka</groupId>
-      <artifactId>spring-kafka</artifactId>
-      <version>2.2.8.RELEASE</version>
-    </dependency>
-
-    <dependency>
-      <groupId>com.fasterxml.jackson.core</groupId>
-      <artifactId>jackson-annotations</artifactId>
-      <version>2.9.0</version>
-      <scope>compile</scope>
-    </dependency>
-
-    <dependency>
-      <groupId>com.fasterxml.jackson.core</groupId>
-      <artifactId>jackson-databind</artifactId>
-      <version>2.9.9.3</version>
-      <scope>compile</scope>
-    </dependency>
-
-  </dependencies>
 </project>
