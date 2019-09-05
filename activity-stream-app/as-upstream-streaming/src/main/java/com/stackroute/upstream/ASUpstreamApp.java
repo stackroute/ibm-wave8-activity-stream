@@ -1,4 +1,5 @@
 package com.stackroute.upstream;
+
 import com.stackroute.upstream.service.UpstreamPublishService;
 import com.stackroute.upstream.service.TweetStreamRunner;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,11 +9,8 @@ import org.springframework.context.annotation.ComponentScan;
 
 import javax.annotation.PostConstruct;
 
-//@ComponentScan("com.techprimers.kafka.springbootkafkaconsumerexample")
-//@Configuration
-
 @SpringBootApplication
-@ComponentScan({"com.stackroute","com.techprimers.kafka.springbootkafkaconsumerexample"})
+
 public class ASUpstreamApp {
 
     @Autowired
@@ -25,7 +23,8 @@ public class ASUpstreamApp {
     }
 
     @PostConstruct
-    public void perform() {
+    public void perform()
+    {
         tweetStreamRunner.stream();
     }
 }
