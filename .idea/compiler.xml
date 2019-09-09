@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="as-upstream-streaming" />
+        <module name="User-Registration" />
+        <module name="Login-Authentication-Microservice" />
+        <module name="as-downstream-save" />
+        <module name="Data-Cleaning" />
+        <module name="as-sentiment-analysis" />
+        <module name="mainapp" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="activity-stream-app" target="1.5" />
+      <module name="as-downstream-save" target="8" />
+      <module name="as-sentiment-analysis" target="8" />
+      <module name="as-upstream-streaming" target="8" />
+      <module name="Data-Cleaning" target="1.7" />
+      <module name="Login-Authentication-Microservice" target="1.7" />
+      <module name="mainapp" target="1.7" />
+      <module name="User-Registration" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

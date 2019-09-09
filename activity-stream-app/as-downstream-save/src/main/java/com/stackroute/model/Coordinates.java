@@ -1,17 +1,20 @@
-package com.stackroute.upstream.model;
+package com.stackroute.model;
+
+import org.springframework.data.cassandra.core.mapping.UserDefinedType;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+@UserDefinedType("coordinates")
 public class Coordinates {
     private String type;
+    // private double[] coordinates=new double[2];
     private List<Double> coordinates=new ArrayList<>();
-
     public Coordinates() {
     }
 
-    public Coordinates(String type, List<Double>coordinates) {
+    public Coordinates(String type, List<Double> coordinates) {
         this.type = type;
         this.coordinates = coordinates;
     }
@@ -25,7 +28,7 @@ public class Coordinates {
         return this;
     }
 
-    public List<Double>getCoordinates() {
+    public List<Double> getCoordinates() {
         return coordinates;
     }
 
@@ -38,7 +41,7 @@ public class Coordinates {
     public String toString() {
         return "Coordinates{" +
                 "type='" + type + '\'' +
-                ", coordinates=" + coordinates +
+                ", coordinates=" + Arrays.toString(new List[]{coordinates}) +
                 '}';
     }
 }

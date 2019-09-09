@@ -9,14 +9,6 @@
     <module>as-upstream-streaming</module>
     <module>as-downstream-save</module>
 
-      <module>mainapp</module>
-      <!--    <module>as-sentiment-analysis</module>-->
-<!--    <module>Login-Authentication-Microservice</module>-->
-    <module>as-data-cleaning</module>
-    <module>as-sentiment-analysis</module>
-      <module>as-web-registration</module>
-    <module>as-web-login-auth</module>
-
   </modules>
   <groupId>com.stackroute</groupId>
   <artifactId>activity-stream-app</artifactId>
