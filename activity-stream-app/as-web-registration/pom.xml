@@ -6,7 +6,7 @@
   <parent>
     <groupId>com.stackroute</groupId>
     <version>1.0-SNAPSHOT</version>
-    <artifactId>activity-streaming-platform</artifactId>
+    <artifactId>activity-stream-app</artifactId>
   </parent>
   <groupId>com.stackroute</groupId>
   <artifactId>User-Registration</artifactId>
@@ -37,7 +37,7 @@
     </dependency>
 
 
-    <dependency>
+   <!-- <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-test</artifactId>
       <scope>test</scope>
@@ -45,7 +45,7 @@
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-devtools</artifactId>
-    </dependency>
+    </dependency>-->
     <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-mongodb -->
     <dependency>
       <groupId>org.springframework.boot</groupId>
@@ -59,6 +59,12 @@
       <artifactId>spring-kafka</artifactId>
       <version>2.2.8.RELEASE</version>
     </dependency>
+      <dependency>
+          <groupId>org.springframework.data</groupId>
+          <artifactId>spring-data-commons</artifactId>
+          <version>2.1.10.RELEASE</version>
+          <scope>compile</scope>
+      </dependency>
   </dependencies>
 
   <build>
