@@ -1,0 +1,36 @@
+<div class="center">
+<mat-toolbar>
+    <span id="header">Edit Profile</span>
+  </mat-toolbar>
+  <mat-card class="my-card">
+    <mat-card-content>
+        <form class="my-form">
+           <mat-form-field class="full-width">
+                  <mat-label>Username</mat-label>
+                  <input  [(ngModel)]="editProfile.username" matInput name="username" type="text" required>
+               </mat-form-field>
+               <mat-form-field class="full-width">
+                  <mat-label>Password</mat-label>
+                  <input [(ngModel)]="editProfile.password" matInput name="password" type="password" required>
+               </mat-form-field>
+               <mat-form-field class="full-width">
+                <mat-label>Phone Number </mat-label>
+                <input [(ngModel)]="editProfile.phonenumber" matInput name="phoneNumber" type="number"  required>
+             </mat-form-field> 
+               <mat-form-field class="full-width">
+                  <mat-label>Email</mat-label>
+                  <input [(ngModel)]="editProfile.emailid" matInput name="emailid" type="text" required>
+               </mat-form-field>  
+               <mat-form-field class="full-width">
+                  <mat-label>Subscribed Topic</mat-label>
+                  <input [(ngModel)]="editProfile.subscribed_topic"  matInput name="subscribed_topic" type="text" required>
+               </mat-form-field>
+              
+        </form>  
+    </mat-card-content>
+<mat-card-actions>
+        <button mat-raised-button (click)="editUser()" color="primary">Save Changes</button>
+     </mat-card-actions>
+  </mat-card>
+  </div>
+  <router-outlet></router-outlet>

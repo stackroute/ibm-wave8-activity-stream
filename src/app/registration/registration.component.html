@@ -1,0 +1,36 @@
+<div class="center">
+<mat-toolbar>
+    <span id="header">User Registration</span>
+  </mat-toolbar>
+  <mat-card class="my-card">
+    <mat-card-content>
+
+        <form class="my-form">
+           <mat-form-field class="full-width">
+                  <mat-label>Username</mat-label>
+                  <input [(ngModel)]="registerData.username"  matInput  placeholder="Username"  name="username" type="text" required>
+               </mat-form-field>
+               <mat-form-field class="full-width">
+                  <mat-label>Password</mat-label>
+                  <input [(ngModel)]="registerData.password" matInput  placeholder="Password"  name="password" type="password" required>
+               </mat-form-field>
+               <mat-form-field class="full-width">
+                <mat-label>Phone Number </mat-label>
+                <input [(ngModel)]="registerData.phonenumber" matInput  placeholder="contact number" name="phoneNumber" type="number"  required>
+             </mat-form-field>              
+               <mat-form-field class="full-width">
+                  <mat-label>Email</mat-label>
+                  <input [(ngModel)]="registerData.emailid" matInput  placeholder="Email" name="email" type="text" required>
+               </mat-form-field>
+               <mat-form-field class="full-width">
+                  <mat-label>subscribed_topic</mat-label>
+                  <input [(ngModel)]="registerData.subscribed_topic"  matInput  placeholder="subscribed topic" name="name" type="text" required>
+               </mat-form-field>
+        </form>    
+   </mat-card-content>
+   <mat-card-actions>
+        <button mat-raised-button (click)="register()" color="primary">REGISTER</button>
+        Already a User ?<a mat-button routerLink="/login">Login</a>
+     </mat-card-actions>
+  </mat-card>
+</div>

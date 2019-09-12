@@ -1,0 +1,41 @@
+<div class="center">
+  <mat-toolbar>
+      <span id="header">Login</span>
+    </mat-toolbar>
+    <mat-card class="my-card">
+      <mat-card-content>
+  
+          <form class="my-form">
+             <mat-form-field class="full-width">
+                    <mat-label>Username</mat-label>
+                    <input [(ngModel)]="username"  matInput  placeholder="Username"  name="username" type="text" required>
+                 </mat-form-field>
+                 <mat-form-field class="full-width">
+                    <mat-label>Password</mat-label>
+                    <input [(ngModel)]="password"  matInput  placeholder="Password" name="password" type="password" required>
+                 </mat-form-field>
+          </form>    
+     </mat-card-content>
+     <mat-card-actions>
+          <button mat-raised-button (click)="login()" color="primary">LOGIN</button>
+          <a mat-button routerLink="/register">New User</a>
+       </mat-card-actions>
+    </mat-card>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

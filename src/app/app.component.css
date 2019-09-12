@@ -1,0 +1,15 @@
+.spacer {
+    flex: 1 1 auto;
+  }
+
+  .center{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    position: relative;
+    top: 40px;
+  }
+
+  #navbar{
+      background-color: #e0d8a8;
+  }

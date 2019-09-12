@@ -1,0 +1,28 @@
+.spacer {
+    flex: 1 1 auto;
+  }
+
+  .center{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    position: relative;
+    top: 40px;
+  }
+
+  #navbar{
+      background-color: #e0d8a8;
+  }
+  .my-form{
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+   
+  .full-width {
+    width: 100%;
+  }
+
+  #header {
+      font-size: 25px;
+  }
