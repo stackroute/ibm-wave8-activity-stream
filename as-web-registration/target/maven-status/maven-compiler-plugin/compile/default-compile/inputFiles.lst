@@ -1,0 +1,9 @@
+/home/clinton/Desktop/Stuffs/MyWebSite/ibm-wave8-activity-stream-master/activity-stream-app/as-web-registration/src/main/java/com/stackroute/domain/UserDetails.java
+/home/clinton/Desktop/Stuffs/MyWebSite/ibm-wave8-activity-stream-master/activity-stream-app/as-web-registration/src/main/java/com/stackroute/App.java
+/home/clinton/Desktop/Stuffs/MyWebSite/ibm-wave8-activity-stream-master/activity-stream-app/as-web-registration/src/main/java/com/stackroute/service/UserService.java
+/home/clinton/Desktop/Stuffs/MyWebSite/ibm-wave8-activity-stream-master/activity-stream-app/as-web-registration/src/main/java/com/stackroute/config/KafkaConfiguration.java
+/home/clinton/Desktop/Stuffs/MyWebSite/ibm-wave8-activity-stream-master/activity-stream-app/as-web-registration/src/main/java/com/stackroute/Controller/UserController.java
+/home/clinton/Desktop/Stuffs/MyWebSite/ibm-wave8-activity-stream-master/activity-stream-app/as-web-registration/src/main/java/com/stackroute/service/UserServiceImpl.java
+/home/clinton/Desktop/Stuffs/MyWebSite/ibm-wave8-activity-stream-master/activity-stream-app/as-web-registration/src/main/java/com/stackroute/exceptions/UserAlreadyExists.java
+/home/clinton/Desktop/Stuffs/MyWebSite/ibm-wave8-activity-stream-master/activity-stream-app/as-web-registration/src/main/java/com/stackroute/exceptions/UserNotFound.java
+/home/clinton/Desktop/Stuffs/MyWebSite/ibm-wave8-activity-stream-master/activity-stream-app/as-web-registration/src/main/java/com/stackroute/repository/UserRepository.java

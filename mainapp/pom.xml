@@ -23,30 +23,6 @@
   </properties>
 
   <dependencies>
-<!--    <dependency>-->
-<!--      <groupId>com.stackroute</groupId>-->
-<!--      <artifactId>as-upstream-streaming</artifactId>-->
-<!--      &lt;!&ndash;            <version>1.0</version>&ndash;&gt;-->
-<!--      <scope>system</scope>-->
-<!--      <systemPath>/home/prathyu/git-repo-ibm-wave8-activity-stream/ibm-wave8-activity-stream/activity-stream-app/as-upstream-streaming/target/as-upstream-streaming-1.0-SNAPSHOT.jar</systemPath>-->
-<!--    </dependency>-->
-    <dependency>
-      <groupId>com.stackroute.upstream</groupId>
-      <artifactId>as-upstream-streaming</artifactId>
-      <version>1.0</version>
-    </dependency>
-<!--    <dependency>-->
-<!--      <groupId>com.stackroute</groupId>-->
-<!--      <artifactId>as-downstream-save</artifactId>-->
-<!--      &lt;!&ndash;            <version>1.0</version>&ndash;&gt;-->
-<!--      <scope>system</scope>-->
-<!--      <systemPath>/home/prathyu/git-repo-ibm-wave8-activity-stream/ibm-wave8-activity-stream/activity-stream-app/as-downstream-save/target/as-downstream-save-1.0-SNAPSHOT.jar</systemPath>-->
-<!--    </dependency>-->
-    <dependency>
-      <groupId>com.stackroute</groupId>
-      <artifactId>as-downstream-save</artifactId>
-      <version>1.0</version>
-    </dependency>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>

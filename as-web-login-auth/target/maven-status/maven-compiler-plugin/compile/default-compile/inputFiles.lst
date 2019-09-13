@@ -1,0 +1,14 @@
+/home/clinton/Desktop/Stuffs/MyWebSite/ibm-wave8-activity-stream-master/activity-stream-app/as-web-login-auth/src/main/java/com/stackroute/controller/JwtAuthenticationController.java
+/home/clinton/Desktop/Stuffs/MyWebSite/ibm-wave8-activity-stream-master/activity-stream-app/as-web-login-auth/src/main/java/com/stackroute/model/DAOUser.java
+/home/clinton/Desktop/Stuffs/MyWebSite/ibm-wave8-activity-stream-master/activity-stream-app/as-web-login-auth/src/main/java/com/stackroute/config/WebSecurityConfig.java
+/home/clinton/Desktop/Stuffs/MyWebSite/ibm-wave8-activity-stream-master/activity-stream-app/as-web-login-auth/src/main/java/com/stackroute/model/JwtRequest.java
+/home/clinton/Desktop/Stuffs/MyWebSite/ibm-wave8-activity-stream-master/activity-stream-app/as-web-login-auth/src/main/java/com/stackroute/service/JwtUserDetailsService.java
+/home/clinton/Desktop/Stuffs/MyWebSite/ibm-wave8-activity-stream-master/activity-stream-app/as-web-login-auth/src/main/java/com/stackroute/config/KafkaConfiguration.java
+/home/clinton/Desktop/Stuffs/MyWebSite/ibm-wave8-activity-stream-master/activity-stream-app/as-web-login-auth/src/main/java/com/stackroute/config/JwtRequestFilter.java
+/home/clinton/Desktop/Stuffs/MyWebSite/ibm-wave8-activity-stream-master/activity-stream-app/as-web-login-auth/src/main/java/com/stackroute/repository/UserDao.java
+/home/clinton/Desktop/Stuffs/MyWebSite/ibm-wave8-activity-stream-master/activity-stream-app/as-web-login-auth/src/main/java/com/stackroute/App.java
+/home/clinton/Desktop/Stuffs/MyWebSite/ibm-wave8-activity-stream-master/activity-stream-app/as-web-login-auth/src/main/java/com/stackroute/config/JwtTokenUtil.java
+/home/clinton/Desktop/Stuffs/MyWebSite/ibm-wave8-activity-stream-master/activity-stream-app/as-web-login-auth/src/main/java/com/stackroute/listener/KafkaConsumer.java
+/home/clinton/Desktop/Stuffs/MyWebSite/ibm-wave8-activity-stream-master/activity-stream-app/as-web-login-auth/src/main/java/com/stackroute/config/JwtAuthenticationEntryPoint.java
+/home/clinton/Desktop/Stuffs/MyWebSite/ibm-wave8-activity-stream-master/activity-stream-app/as-web-login-auth/src/main/java/com/stackroute/model/UserDTO.java
+/home/clinton/Desktop/Stuffs/MyWebSite/ibm-wave8-activity-stream-master/activity-stream-app/as-web-login-auth/src/main/java/com/stackroute/model/JwtResponse.java

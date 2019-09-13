@@ -6,24 +6,28 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="as-ibm-domain" />
+        <module name="Login-Authentication-Microservice" />
         <module name="as-upstream-streaming" />
         <module name="User-Registration" />
-        <module name="Login-Authentication-Microservice" />
+        <module name="as-sentiment-analysis" />
         <module name="as-downstream-save" />
         <module name="Data-Cleaning" />
-        <module name="as-sentiment-analysis" />
         <module name="mainapp" />
+        <module name="twitterAdapter" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="activity-stream-app" target="1.5" />
       <module name="as-downstream-save" target="8" />
+      <module name="as-ibm-domain" target="1.7" />
       <module name="as-sentiment-analysis" target="8" />
       <module name="as-upstream-streaming" target="8" />
-      <module name="Data-Cleaning" target="1.7" />
-      <module name="Login-Authentication-Microservice" target="1.7" />
+      <module name="Data-Cleaning" target="8" />
+      <module name="Login-Authentication-Microservice" target="8" />
       <module name="mainapp" target="1.7" />
-      <module name="User-Registration" target="1.7" />
+      <module name="twitterAdapter" target="1.7" />
+      <module name="User-Registration" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>

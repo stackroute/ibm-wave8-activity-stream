@@ -1,4 +1,4 @@
-//package com.stackroute.domain;
+package com.stackroute.domain;//package com.stackroute.domain;
 //
 //
 //public class MyCustomTweet {

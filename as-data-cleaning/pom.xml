@@ -36,15 +36,6 @@
       <artifactId>jackson-databind</artifactId>
       <version>2.9.7</version>
     </dependency>
-
-<<<<<<< HEAD
-<!--    <dependency>-->
-<!--      <groupId>com.stackroute</groupId>-->
-<!--      <artifactId>twitterMicroservice</artifactId>-->
-<!--      &lt;!&ndash;            <version>1.0</version>&ndash;&gt;-->
-<!--      <scope>system</scope>-->
-<!--      <systemPath>/home/sura/Downloads/twitterMicroservice.jar</systemPath>-->
-<!--    </dependency>-->
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-autoconfigure</artifactId>
@@ -71,15 +62,6 @@
       <artifactId>spring-context</artifactId>
       <version>5.1.9.RELEASE</version>
     </dependency>
-
-
-    <!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-cassandra -->
-<!--    <dependency>-->
-<!--      <groupId>org.springframework.data</groupId>-->
-<!--      <artifactId>spring-data-cassandra</artifactId>-->
-<!--      <version>2.1.10.RELEASE</version>-->
-<!--    </dependency>-->
-
     <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
@@ -146,23 +128,6 @@
       <version>3.9.2</version>
       <classifier>models</classifier>
     </dependency>
-
-
-
-    <!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-cassandra -->
-
-
-
-
-=======
-    <dependency>
-      <groupId>com.stackroute</groupId>
-      <artifactId>twitterMicroservice</artifactId>
-      <!--            <version>1.0</version>-->
-      <scope>system</scope>
-      <systemPath>/home/sura/Downloads/twitterMicroservice.jar</systemPath>
-    </dependency>
->>>>>>> 7bcf257ee55423b583da4dd05967c9fdd3e547d2
   </dependencies>
 
   <build>
@@ -177,10 +142,6 @@
         <plugin>
           <artifactId>maven-resources-plugin</artifactId>
           <version>3.0.2</version>
-        </plugin>
-        <plugin>
-          <artifactId>maven-compiler-plugin</artifactId>
-          <version>3.8.0</version>
         </plugin>
         <plugin>
           <artifactId>maven-surefire-plugin</artifactId>
@@ -207,8 +168,6 @@
           <artifactId>maven-project-info-reports-plugin</artifactId>
           <version>3.0.0</version>
         </plugin>
-<<<<<<< HEAD
-
         <plugin>
           <groupId>org.springframework.boot</groupId>
           <artifactId>spring-boot-maven-plugin</artifactId>
@@ -220,21 +179,15 @@
             </execution>
           </executions>
         </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <configuration>
+            <source>8</source>
+            <target>8</target>
+          </configuration>
+        </plugin>
       </plugins>
     </pluginManagement>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <configuration>
-          <source>8</source>
-          <target>8</target>
-        </configuration>
-      </plugin>
-    </plugins>
-=======
-      </plugins>
-    </pluginManagement>
->>>>>>> 7bcf257ee55423b583da4dd05967c9fdd3e547d2
   </build>
 </project>
