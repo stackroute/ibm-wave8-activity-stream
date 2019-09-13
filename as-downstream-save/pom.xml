@@ -45,13 +45,19 @@
       <artifactId>jackson-databind</artifactId>
       <version>2.10.0.pr2</version>
     </dependency>
+<<<<<<< HEAD
     <!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-cassandra -->
+=======
+>>>>>>> 7bcf257ee55423b583da4dd05967c9fdd3e547d2
     <dependency>
       <groupId>org.springframework.data</groupId>
       <artifactId>spring-data-cassandra</artifactId>
       <version>2.1.10.RELEASE</version>
     </dependency>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7bcf257ee55423b583da4dd05967c9fdd3e547d2
     <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
@@ -78,10 +84,13 @@
       <artifactId>slf4j-jdk14</artifactId>
       <version>1.7.25</version>
     </dependency>
+<<<<<<< HEAD
 <!--    <dependency>-->
 <!--      <groupId>io.netty</groupId>-->
 <!--      <artifactId>netty-all</artifactId>-->
 <!--    </dependency>-->
+=======
+>>>>>>> 7bcf257ee55423b583da4dd05967c9fdd3e547d2
   </dependencies>
 
 
@@ -139,10 +148,13 @@
           <target>8</target>
         </configuration>
       </plugin>
+<<<<<<< HEAD
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
       </plugin>
+=======
+>>>>>>> 7bcf257ee55423b583da4dd05967c9fdd3e547d2
     </plugins>
   </build>
 </project>
