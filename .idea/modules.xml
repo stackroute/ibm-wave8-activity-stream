@@ -11,6 +11,7 @@
       <module fileurl="file://$PROJECT_DIR$/as-sentiment-analysis/as-sentiment-analysis.iml" filepath="$PROJECT_DIR$/as-sentiment-analysis/as-sentiment-analysis.iml" />
       <module fileurl="file://$PROJECT_DIR$/as-upstream-streaming/as-upstream-streaming.iml" filepath="$PROJECT_DIR$/as-upstream-streaming/as-upstream-streaming.iml" />
       <module fileurl="file://$PROJECT_DIR$/mainapp/mainapp.iml" filepath="$PROJECT_DIR$/mainapp/mainapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/feedservice/spring-boot-websocket-example.iml" filepath="$PROJECT_DIR$/feedservice/spring-boot-websocket-example.iml" />
       <module fileurl="file://$PROJECT_DIR$/twitterAdapter/twitterAdapter.iml" filepath="$PROJECT_DIR$/twitterAdapter/twitterAdapter.iml" />
     </modules>
   </component>

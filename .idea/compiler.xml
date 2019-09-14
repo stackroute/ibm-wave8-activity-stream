@@ -11,6 +11,7 @@
         <module name="User-Registration" />
         <module name="Login-Authentication-Microservice" />
         <module name="as-downstream-save" />
+        <module name="spring-boot-websocket-example" />
         <module name="Data-Cleaning" />
         <module name="as-sentiment-analysis" />
         <module name="mainapp" />
@@ -26,8 +27,14 @@
       <module name="Data-Cleaning" target="8" />
       <module name="Login-Authentication-Microservice" target="8" />
       <module name="mainapp" target="1.7" />
+      <module name="spring-boot-websocket-example" target="11" />
       <module name="twitterAdapter" target="1.7" />
       <module name="User-Registration" target="8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="spring-boot-websocket-example" options="-parameters" />
+    </option>
   </component>
 </project>
