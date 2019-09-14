@@ -70,8 +70,8 @@ public class DataFetcher {
                             if(domain.equals("India"))
 
                                 System.out.println("Indiaaaaaaaaaaaaaaaaaaaaaaaa  "+as_tweet.toString());
-                            else if(domain.equals("America"))
-                                System.out.println("Americaaaaaaaaaaaaaaaaaaa "+as_tweet.toString());
+                            else if(domain.equals("IBM"))
+                                System.out.println("IBM"+as_tweet.toString());
 
 
 //                          ActivityTweet activityTweet=new ActivityTweet();
