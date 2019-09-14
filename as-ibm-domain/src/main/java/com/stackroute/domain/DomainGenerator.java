@@ -14,7 +14,7 @@ public class DomainGenerator {
   public String findDomain(AnalyzedActivityTweet message){
 
     String domain = "";
-    Tweet tweet=new Tweet();
+//    Tweet tweet=new Tweet();
     String text = message.getContent();
     System.out.println(">>>>>>>>>>>>>>"  + text);
     String textToArray[]=text.split(" ");
