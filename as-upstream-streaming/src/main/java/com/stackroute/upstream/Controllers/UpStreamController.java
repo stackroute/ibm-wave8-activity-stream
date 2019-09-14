@@ -17,10 +17,13 @@ public class UpStreamController {
 
     @PostConstruct
     public String sayHello() throws IOException {
-        dataFetcher.fetchData();
-      System.out.println("--------------");
-      new IRCService().getIRC();
-      System.out.println("--------------");
+        dataFetcher.fetchData("IBM");
+        dataFetcher.fetchData("India");
+
+
+        System.out.println("--------------");
+        new IRCService().getIRC();
+        System.out.println("--------------");
         System.out.println("is ths getting executed ??");
         return "will this work ??";
     }

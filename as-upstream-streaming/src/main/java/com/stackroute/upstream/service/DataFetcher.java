@@ -22,11 +22,12 @@ import twitter4j.TwitterStream;
 
 import javax.swing.*;
 import java.io.IOException;
+import java.util.UUID;
 
 @Service
 public class DataFetcher {
-     int i=0;
-     int PROCESS_LIMIT=5;
+    int i=0;
+    int PROCESS_LIMIT=5;
 
     @Autowired
     private KafkaTemplate<String, ActivityTweet> kafkaTemplate;
@@ -34,8 +35,8 @@ public class DataFetcher {
     private ObjectMapper mapper = new ObjectMapper();
 
 
-//    private final static String TOPIC = "tweet";
-    public void fetchData()
+    //    private final static String TOPIC = "tweet";
+    public void fetchData(String domain)
     {
         System.out.println(kafkaTemplate);
         TweetStreamRunner tweetStreamRunner=new TweetStreamRunner();
@@ -62,9 +63,15 @@ public class DataFetcher {
                                     .actor(object("person").id(tweet.getUser().getName()).displayName(tweet.getUser().getScreen_name()))
                                     .get();
 
-                           ActivityTweet as_tweet = mapper.readValue(activity.toString(), ActivityTweet.class);
+                            ActivityTweet as_tweet = mapper.readValue(activity.toString(), ActivityTweet.class);
+                            UUID uuid=UUID.randomUUID();
+                            as_tweet.setUuid(uuid.toString());
+                            as_tweet.setTimeStamp(tweet.getTimestamp_ms());
+                            if(domain.equals("India"))
 
-                          System.out.println(as_tweet.toString());
+                                System.out.println("Indiaaaaaaaaaaaaaaaaaaaaaaaa  "+as_tweet.toString());
+                            else if(domain.equals("America"))
+                                System.out.println("Americaaaaaaaaaaaaaaaaaaa "+as_tweet.toString());
 
 
 //                          ActivityTweet activityTweet=new ActivityTweet();
@@ -98,7 +105,7 @@ public class DataFetcher {
         //FilterQuery tweetFilter=new FilterQuery();
 
 
-        twitterStream.filter("India");
-
+//        twitterStream.filter("India");
+        twitterStream.filter(domain);
     }
 }

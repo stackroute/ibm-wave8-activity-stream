@@ -8,10 +8,12 @@ import lombok.*;
 @Setter
 @Data
 public class ActivityTweet {
-   String verb;
-   TwitterActor actor;
-   String content;
-   MyCustomTweet object;
+   private String verb;
+   private String timeStamp;
+   private String uuid;
+   private TwitterActor actor;
+   private String content;
+   private MyCustomTweet object;
 
 
 }

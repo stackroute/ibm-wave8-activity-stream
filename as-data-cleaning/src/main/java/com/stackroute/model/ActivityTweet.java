@@ -14,6 +14,8 @@ import lombok.*;
 
 public class ActivityTweet {
 
+  private String timeStamp;
+  private String uuid;
   private String content;
   private String verb;
   private TwitterActor actor;
