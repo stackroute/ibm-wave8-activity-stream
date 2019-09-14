@@ -30,9 +30,9 @@
             <version>2.9.9</version>
         </dependency>
         <dependency>
-          <groupId>com.stackroute</groupId>
-          <artifactId>twitterAdapter</artifactId>
-          <version>1.0-SNAPSHOT</version>
+            <groupId>com.stackroute</groupId>
+            <artifactId>twitterAdapter</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.twitter4j/twitter4j-core -->

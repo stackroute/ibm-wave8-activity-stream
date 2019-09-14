@@ -1,5 +1,6 @@
 package com.stackroute.model;
 
+import com.stackroute.SentimentCalculator.SentimentResult;
 import lombok.*;
 
 @Data
@@ -12,6 +13,7 @@ public class AnalyzedActivityTweet {
   TwitterActor actor;
   String content;
   MyCustomTweet object;
+  SentimentResult sentimentResult;
 
 
 }
