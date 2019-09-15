@@ -3,6 +3,7 @@
 /home/clinton/Desktop/Stuffs/MyWebSite/ibm-wave8-activity-stream-master/activity-stream-app/as-data-cleaning/src/main/java/com/stackroute/model/User.java
 /home/clinton/Desktop/Stuffs/MyWebSite/ibm-wave8-activity-stream-master/activity-stream-app/as-data-cleaning/src/main/java/com/stackroute/model/TwitterURL.java
 /home/clinton/Desktop/Stuffs/MyWebSite/ibm-wave8-activity-stream-master/activity-stream-app/as-data-cleaning/src/main/java/com/stackroute/config/ProducerConfiguration.java
+/home/clinton/Desktop/Stuffs/MyWebSite/ibm-wave8-activity-stream-master/activity-stream-app/as-data-cleaning/src/main/java/com/stackroute/ASCleaning.java
 /home/clinton/Desktop/Stuffs/MyWebSite/ibm-wave8-activity-stream-master/activity-stream-app/as-data-cleaning/src/main/java/com/stackroute/Pipeline.java
 /home/clinton/Desktop/Stuffs/MyWebSite/ibm-wave8-activity-stream-master/activity-stream-app/as-data-cleaning/src/main/java/com/stackroute/model/Sizes.java
 /home/clinton/Desktop/Stuffs/MyWebSite/ibm-wave8-activity-stream-master/activity-stream-app/as-data-cleaning/src/main/java/com/stackroute/model/TwitterExtendedEntity.java
@@ -15,7 +16,6 @@
 /home/clinton/Desktop/Stuffs/MyWebSite/ibm-wave8-activity-stream-master/activity-stream-app/as-data-cleaning/src/main/java/com/stackroute/config/KafkaConfiguration.java
 /home/clinton/Desktop/Stuffs/MyWebSite/ibm-wave8-activity-stream-master/activity-stream-app/as-data-cleaning/src/main/java/com/stackroute/model/Tweet.java
 /home/clinton/Desktop/Stuffs/MyWebSite/ibm-wave8-activity-stream-master/activity-stream-app/as-data-cleaning/src/main/java/com/stackroute/model/HashTag.java
-/home/clinton/Desktop/Stuffs/MyWebSite/ibm-wave8-activity-stream-master/activity-stream-app/as-data-cleaning/src/main/java/com/stackroute/App.java
 /home/clinton/Desktop/Stuffs/MyWebSite/ibm-wave8-activity-stream-master/activity-stream-app/as-data-cleaning/src/main/java/com/stackroute/model/MyCustomTweet.java
 /home/clinton/Desktop/Stuffs/MyWebSite/ibm-wave8-activity-stream-master/activity-stream-app/as-data-cleaning/src/main/java/com/stackroute/model/Media.java
 /home/clinton/Desktop/Stuffs/MyWebSite/ibm-wave8-activity-stream-master/activity-stream-app/as-data-cleaning/src/main/java/com/stackroute/model/TwitterActor.java

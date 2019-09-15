@@ -12,6 +12,7 @@
   <groupId>com.stackroute</groupId>
   <artifactId>twitterAdapter</artifactId>
   <version>1.0-SNAPSHOT</version>
+  <packaging>jar</packaging>
 
   <name>twitterAdapter</name>
   <!-- FIXME change it to the project's website -->
