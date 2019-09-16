@@ -27,6 +27,8 @@ public class KafkaConsumer {
       analyzedActivityTweet.setObject(message.getObject());
       analyzedActivityTweet.setSentimentResult(sentimentResult);
       analyzedActivityTweet.setVerb(message.getVerb());
+      analyzedActivityTweet.setTimeStamp(message.getTimeStamp());
+      analyzedActivityTweet.setUuid(message.getUuid());
       kafkaTemplate.send("tweet3",analyzedActivityTweet);
     }
 }

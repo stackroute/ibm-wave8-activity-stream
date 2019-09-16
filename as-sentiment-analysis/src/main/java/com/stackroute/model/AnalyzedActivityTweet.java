@@ -9,10 +9,12 @@ import lombok.*;
 @Setter
 @Getter
 public class AnalyzedActivityTweet {
-  String verb;
-  TwitterActor actor;
-  String content;
-  MyCustomTweet object;
-  SentimentResult sentimentResult;
+  private String timeStamp;
+  private String uuid;
+  private String verb;
+  private TwitterActor actor;
+  private String content;
+  private MyCustomTweet object;
+  private SentimentResult sentimentResult;
 
 }

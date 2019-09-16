@@ -1,6 +1,5 @@
 package com.stackroute.config;
 
-import com.stackroute.model.ActivityTweet;
 import com.stackroute.model.AnalyzedActivityTweet;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.common.serialization.StringDeserializer;

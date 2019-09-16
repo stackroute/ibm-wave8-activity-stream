@@ -18,6 +18,7 @@ import java.util.Map;
 @EnableKafka
 public class KafkaProducerConfig {
 
+
   @Bean
   public ProducerFactory<String, IBMDomainActivityTweet> producerFactory() {
     Map<String, Object> config = new HashMap<>();
