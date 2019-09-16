@@ -9,6 +9,8 @@ import lombok.*;
 @Setter
 @Getter
 public class AnalyzedActivityTweet {
+  String timeStamp;
+  String uuid;
   String verb;
   TwitterActor actor;
   String content;
