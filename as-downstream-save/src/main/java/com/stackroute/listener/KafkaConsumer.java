@@ -17,7 +17,7 @@ public class KafkaConsumer {
 
     @KafkaListener(topics = "tweet1")
     public void consume(ActivityTweet activityTweet) {
-      System.out.println(activityTweet);
+//      System.out.println(activityTweet);
 //      System.out.println(activityTweet);
 
         try {
@@ -25,7 +25,7 @@ public class KafkaConsumer {
 //            Tweet t = mapper.readValue(activityTweet, Tweet.class);
             System.out.println("------------------ Consumed message: " + activityTweet);
             twitterService.save(activityTweet);
-        }catch(Exception e) {
+        } catch(Exception e) {
             e.printStackTrace();
         }
     }

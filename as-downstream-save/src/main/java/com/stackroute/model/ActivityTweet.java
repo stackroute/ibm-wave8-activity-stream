@@ -13,6 +13,10 @@ import org.springframework.data.cassandra.core.mapping.*;
 @Data
 @Table("ActivityTweet")
 public class ActivityTweet {
+  @Column("timeStamp")
+  private String timeStamp;
+  @Column("uuid")
+  private String uuid;
   @PrimaryKey
   @Column("content")
   String content;

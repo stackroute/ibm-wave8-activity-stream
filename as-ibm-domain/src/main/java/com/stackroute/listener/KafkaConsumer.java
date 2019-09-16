@@ -2,6 +2,7 @@ package com.stackroute.listener;
 
 import com.stackroute.domain.DomainGenerator;
 import com.stackroute.model.AnalyzedActivityTweet;
+import com.stackroute.model.IBMDomainActivityTweet;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.kafka.core.KafkaTemplate;

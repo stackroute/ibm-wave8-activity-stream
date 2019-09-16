@@ -1,6 +1,6 @@
 package com.stackroute.upstream.Controllers;
 
-import com.stackroute.adapter.IRCService;
+//import com.stackroute.adapter.IRCService;
 import com.stackroute.upstream.service.DataFetcher;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
@@ -17,12 +17,12 @@ public class UpStreamController {
 
     @PostConstruct
     public String sayHello() throws IOException {
-        dataFetcher.fetchData("IBM");
         dataFetcher.fetchData("India");
+        dataFetcher.fetchData("Pakistan");
 
 
         System.out.println("--------------");
-        new IRCService().getIRC();
+//        new IRCService().getIRC();
         System.out.println("--------------");
         System.out.println("is ths getting executed ??");
         return "will this work ??";

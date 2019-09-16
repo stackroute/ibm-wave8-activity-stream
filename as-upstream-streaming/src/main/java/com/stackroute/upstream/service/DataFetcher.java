@@ -5,22 +5,19 @@ import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.introspect.VisibilityChecker;
-//import com.ibm.common.activitystreams.Makers;
-//import com.ibm.common.activitystreams;
 import com.ibm.common.activitystreams.Activity;
 import static  com.ibm.common.activitystreams.Makers.activity;
 import static com.ibm.common.activitystreams.Makers.object;
-import com.stackroute.model.Tweet;
+
+
 import com.stackroute.service.TweetStreamRunner;
 import com.stackroute.upstream.domain.ActivityTweet;
-import com.stackroute.upstream.domain.MyCustomTweet;
+import com.stackroute.upstream.model.Tweet;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 import twitter4j.RawStreamListener;
 import twitter4j.TwitterStream;
-
-import javax.swing.*;
 import java.io.IOException;
 import java.util.UUID;
 
@@ -70,8 +67,8 @@ public class DataFetcher {
                             if(domain.equals("India"))
 
                                 System.out.println("Indiaaaaaaaaaaaaaaaaaaaaaaaa  "+as_tweet.toString());
-                            else if(domain.equals("IBM"))
-                                System.out.println("IBM"+as_tweet.toString());
+                            else if(domain.equals("Pakistan"))
+                                System.out.println("IBMMMMMMMMMMMMMMMM:- "+as_tweet.toString());
 
 
 //                          ActivityTweet activityTweet=new ActivityTweet();

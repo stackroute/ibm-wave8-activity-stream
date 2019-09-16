@@ -85,6 +85,7 @@
       <version>2.2.8.RELEASE</version>
       <scope>compile</scope>
     </dependency>
+
     <dependency>
       <groupId>com.ibm.common</groupId>
       <artifactId>activitystreams-ext</artifactId>
