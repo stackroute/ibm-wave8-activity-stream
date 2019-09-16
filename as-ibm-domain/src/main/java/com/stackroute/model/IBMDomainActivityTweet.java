@@ -1,8 +1,6 @@
 package com.stackroute.model;
 
 import com.stackroute.SentimentCalculator.SentimentResult;
-import com.stackroute.SentimentCount;
-import com.stackroute.domain.DomainGenerator;
 import lombok.*;
 
 @Data

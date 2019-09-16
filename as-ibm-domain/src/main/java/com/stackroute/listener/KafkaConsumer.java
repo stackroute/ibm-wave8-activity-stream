@@ -1,9 +1,7 @@
 package com.stackroute.listener;
 
-import com.stackroute.SentimentCount;
 import com.stackroute.domain.DomainGenerator;
 import com.stackroute.model.AnalyzedActivityTweet;
-import com.stackroute.model.IBMDomainActivityTweet;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.kafka.core.KafkaTemplate;
@@ -25,8 +23,6 @@ public class KafkaConsumer {
       DomainGenerator domainGenerator=new DomainGenerator();
       String domain = domainGenerator.findDomain(message);
       double score = message.getSentimentResult().getSentimentScore();
-      SentimentCount sentimentCount=new SentimentCount();
-      sentimentCount.countSentiment(score);
       System.out.println("Domain data:-   "+ domain);
       IBMDomainActivityTweet ibmDomainActivityTweet=new IBMDomainActivityTweet();
       ibmDomainActivityTweet.setTimeStamp(message.getTimeStamp());
