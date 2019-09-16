@@ -11,7 +11,7 @@ import java.beans.ExceptionListener;
 @Service
 public class KafkaConsumer {
 
-    @KafkaListener(topics = "tweet")
+    @KafkaListener(topics = "tweet1")
     public void consume(byte[] message) {
 
         try {

@@ -1,7 +1,7 @@
 package com.stackroute.upstream.config;
 
 import com.ibm.common.activitystreams.Activity;
-import com.stackroute.model.Tweet;
+//import com.stackroute.model.Tweet;
 import com.stackroute.upstream.domain.ActivityTweet;
 import com.stackroute.upstream.domain.MyCustomTweet;
 import org.apache.kafka.clients.producer.ProducerConfig;

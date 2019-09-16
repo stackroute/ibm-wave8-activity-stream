@@ -5,9 +5,9 @@ import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.introspect.VisibilityChecker;
-import com.stackroute.adapter.IRCService;
-import com.stackroute.model.Tweet;
-import com.stackroute.service.TweetStreamRunner;
+//import com.stackroute.adapter.IRCService;
+//import com.stackroute.model.Tweet;
+//import com.stackroute.service.TweetStreamRunner;
 import com.stackroute.upstream.domain.MyCustomTweet;
 import com.stackroute.upstream.service.DataFetcher;
 import org.apache.kafka.clients.producer.ProducerConfig;
@@ -32,7 +32,7 @@ import java.util.Map;
 //import static com.stackroute.App.process;
 
 @SpringBootApplication
-@Import({IRCService.class})
+//@Import({IRCService.class})
 public class ASUpstreamApp {
 
   /*  static int i=0;

@@ -16,23 +16,28 @@
             <version>1.3.2</version>
             <scope>compile</scope>
         </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+            <version>2.3</version>
+            <scope>provided</scope>
+        </dependency>
         <!-- https://mvnrepository.com/artifact/org.springframework.kafka/spring-kafka -->
         <dependency>
             <groupId>org.springframework.kafka</groupId>
             <artifactId>spring-kafka</artifactId>
             <version>2.2.8.RELEASE</version>
         </dependency>
-
+        <dependency>
+            <groupId>com.stackroute</groupId>
+            <artifactId>twitterAdapter</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
         <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core -->
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-core</artifactId>
             <version>2.9.9</version>
-        </dependency>
-        <dependency>
-            <groupId>com.stackroute</groupId>
-            <artifactId>twitterAdapter</artifactId>
-            <version>1.0-SNAPSHOT</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.twitter4j/twitter4j-core -->
@@ -63,7 +68,6 @@
       <dependency>
         <groupId>com.stackroute</groupId>
         <artifactId>IRC</artifactId>
-        <version>0.0.1</version>
       </dependency>
         <!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
         <dependency>
