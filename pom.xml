@@ -8,6 +8,7 @@
   <modules>
     <module>as-upstream-streaming</module>
     <module>as-downstream-save</module>
+    <module>politicalDomain</module>
 
       <module>mainapp</module>
     <module>notifyService</module>

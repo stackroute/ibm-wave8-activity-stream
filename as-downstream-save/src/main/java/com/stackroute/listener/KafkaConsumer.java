@@ -17,13 +17,13 @@ public class KafkaConsumer {
     private TwitterService twitterService;
 
 
-    @KafkaListener(topics = "ibmtweet")
+    @KafkaListener(topics = "ibmtweet",groupId ="group_id2", containerFactory = "kafkaListenerContainerFactory2")
     public void consumeProcessedTweet(ProcessedTweet processedTweet)
     {
         System.out.println("Processed Tweet is:- "+processedTweet);
         twitterService.saveProcessedTweet(processedTweet);
     }
-    @KafkaListener(topics = "raw")
+    @KafkaListener(topics = "raw", groupId = "group_id", containerFactory = "kafkaListenerContainerFactory")
     public void consume(ActivityTweet activityTweet) {
 //      System.out.println(activityTweet);
 //      System.out.println(activityTweet);

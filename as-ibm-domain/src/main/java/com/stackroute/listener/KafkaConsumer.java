@@ -10,9 +10,9 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class KafkaConsumer {
-  int POSITIVE;
-  int NEGATIVE;
-  int NEUTRAL;
+  private int POSITIVE;
+  private int NEGATIVE;
+  private int NEUTRAL;
 
   @Autowired
   KafkaTemplate<String, IBMDomainActivityTweet> kafkaTemplate;
