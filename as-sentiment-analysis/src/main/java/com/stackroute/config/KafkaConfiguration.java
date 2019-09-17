@@ -1,6 +1,7 @@
 package com.stackroute.config;
 
 import com.stackroute.model.ActivityTweet;
+import com.stackroute.model.TweetAfterCleansing;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.common.serialization.StringDeserializer;
 import org.springframework.context.annotation.Bean;
@@ -18,9 +19,9 @@ import java.util.Map;
 @Configuration
 public class KafkaConfiguration {
   @Bean
-  public ConsumerFactory<String, ActivityTweet> consumerFactory() {
+  public ConsumerFactory<String, TweetAfterCleansing> consumerFactory() {
     Map<String, Object> config = new HashMap<>();
-    JsonDeserializer<ActivityTweet> deserializer = new JsonDeserializer<>(ActivityTweet.class);
+    JsonDeserializer<TweetAfterCleansing> deserializer = new JsonDeserializer<>(TweetAfterCleansing.class);
     deserializer.setRemoveTypeHeaders(false);
     deserializer.addTrustedPackages("*");
     deserializer.setUseTypeMapperForKey(true);
@@ -35,8 +36,8 @@ public class KafkaConfiguration {
 
 
   @Bean
-  public ConcurrentKafkaListenerContainerFactory<String, ActivityTweet> kafkaListenerContainerFactory() {
-    ConcurrentKafkaListenerContainerFactory<String, ActivityTweet> factory = new ConcurrentKafkaListenerContainerFactory();
+  public ConcurrentKafkaListenerContainerFactory<String, TweetAfterCleansing> kafkaListenerContainerFactory() {
+    ConcurrentKafkaListenerContainerFactory<String, TweetAfterCleansing> factory = new ConcurrentKafkaListenerContainerFactory();
     factory.setConsumerFactory(consumerFactory());
     return factory;
   }

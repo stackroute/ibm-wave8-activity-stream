@@ -46,9 +46,14 @@ public class KafkaConsumer {
       else{
         NEUTRAL++;
       }
+<<<<<<< HEAD
       if(NEGATIVE==5){
         System.out.println("sent for email");
         kafkaTemplate2.send("mail","Alert! "+NEGATIVE+" Negative tweets found");
+=======
+      if(NEGATIVE>1000){
+        System.out.println("alert");
+>>>>>>> bef27849eac8d7aee085a8ad3d42a6c8c2e8877b
       }
 
       System.out.println("Positive"+POSITIVE);

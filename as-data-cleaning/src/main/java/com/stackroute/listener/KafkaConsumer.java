@@ -35,6 +35,8 @@ public class KafkaConsumer {
             e.printStackTrace();
         }
         String contentnew=service.save(activityTweet);
+        tweetAfterCleansing.setTimeStamp(activityTweet.getTimeStamp());
+        tweetAfterCleansing.setUuid(activityTweet.getUuid());
         tweetAfterCleansing.setActor(activityTweet.getActor());
         tweetAfterCleansing.setContent(contentnew);
         tweetAfterCleansing.setObject(activityTweet.getObject());
