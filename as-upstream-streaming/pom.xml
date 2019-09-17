@@ -65,10 +65,6 @@
             <artifactId>spring-boot-starter-web</artifactId>
             <version>2.1.8.RELEASE</version>
         </dependency>
-      <dependency>
-        <groupId>com.stackroute</groupId>
-        <artifactId>IRC</artifactId>
-      </dependency>
         <!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
         <dependency>
             <groupId>com.google.code.gson</groupId>
