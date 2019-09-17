@@ -20,6 +20,7 @@
     <module>as-web-login-auth</module>
     <module>twitterAdapter</module>
     <module>as-ibm-domain</module>
+    <module>as-feedservice</module>
 
 
   </modules>

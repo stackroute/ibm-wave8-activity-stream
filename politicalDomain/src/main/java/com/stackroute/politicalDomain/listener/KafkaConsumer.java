@@ -37,6 +37,7 @@ public class KafkaConsumer {
         politicalDomainActivityTweet.setUuid(message.getUuid());
         politicalDomainActivityTweet.setDomain(domain);
         kafkaTemplate.send("ibmtweet",politicalDomainActivityTweet);
+        kafkaTemplate.send("socket",politicalDomainActivityTweet);
         if(score<2){
             NEGATIVE++;
         }

@@ -37,6 +37,7 @@ public class KafkaConsumer {
       ibmDomainActivityTweet.setSentimentResult(message.getSentimentResult());
       ibmDomainActivityTweet.setDomain(domain);
       kafkaTemplate.send("ibmtweet",ibmDomainActivityTweet);
+      kafkaTemplate.send("socket",ibmDomainActivityTweet);
       if(score<2){
         NEGATIVE++;
       }
