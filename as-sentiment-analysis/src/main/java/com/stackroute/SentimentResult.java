@@ -30,4 +30,6 @@ public class SentimentResult {
   public void setSentimentClass(SentimentClassification sentimentClass) {
     this.sentimentClass = sentimentClass;
   }
+
+
 }
