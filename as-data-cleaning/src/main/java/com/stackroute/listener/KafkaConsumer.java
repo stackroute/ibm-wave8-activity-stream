@@ -41,7 +41,8 @@ public class KafkaConsumer {
         tweetAfterCleansing.setContent(contentnew);
         tweetAfterCleansing.setObject(activityTweet.getObject());
         tweetAfterCleansing.setVerb(activityTweet.getVerb());
-
+        tweetAfterCleansing.setUuid(activityTweet.getUuid());
+        tweetAfterCleansing.setTimeStamp(activityTweet.getTimeStamp());
         kafkaTemplate.send("tweet2",tweetAfterCleansing);
     }
 

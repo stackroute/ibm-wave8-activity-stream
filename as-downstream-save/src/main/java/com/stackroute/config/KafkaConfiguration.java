@@ -1,6 +1,7 @@
 package com.stackroute.config;
 
 import com.stackroute.model.ActivityTweet;
+import com.stackroute.model.ProcessedTweet;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.common.serialization.ByteArrayDeserializer;
 import org.apache.kafka.common.serialization.StringDeserializer;
@@ -19,6 +20,21 @@ import java.util.Map;
 @Configuration
 public class KafkaConfiguration {
 
+    @Bean
+    public ConsumerFactory<String, ProcessedTweet> consumerFactory2() {
+        Map<String, Object> config = new HashMap<>();
+        JsonDeserializer<ProcessedTweet> deserializer = new JsonDeserializer<>(ProcessedTweet.class);
+        deserializer.setRemoveTypeHeaders(false);
+        deserializer.addTrustedPackages("*");
+        deserializer.setUseTypeMapperForKey(true);
+//
+        config.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "127.0.0.1:9092");
+        config.put(ConsumerConfig.GROUP_ID_CONFIG, "group_id2");
+        config.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
+//        config.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, JsonDeserializer.class);
+        config.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, deserializer);
+        return new DefaultKafkaConsumerFactory<>(config, new StringDeserializer(), deserializer);
+    }
     @Bean
     public ConsumerFactory<String, ActivityTweet> consumerFactory() {
         Map<String, Object> config = new HashMap<>();
@@ -40,6 +56,12 @@ public class KafkaConfiguration {
     public ConcurrentKafkaListenerContainerFactory<String, ActivityTweet> kafkaListenerContainerFactory() {
         ConcurrentKafkaListenerContainerFactory<String, ActivityTweet> factory = new ConcurrentKafkaListenerContainerFactory();
         factory.setConsumerFactory(consumerFactory());
+        return factory;
+    }
+    @Bean
+    public ConcurrentKafkaListenerContainerFactory<String, ProcessedTweet> kafkaListenerContainerFactory2() {
+        ConcurrentKafkaListenerContainerFactory<String, ProcessedTweet> factory = new ConcurrentKafkaListenerContainerFactory();
+        factory.setConsumerFactory(consumerFactory2());
         return factory;
     }
 

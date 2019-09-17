@@ -10,12 +10,14 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class KafkaConsumer {
-  int POSITIVE;
-  int NEGATIVE;
-  int NEUTRAL;
+  private int POSITIVE;
+  private int NEGATIVE;
+  private int NEUTRAL;
 
   @Autowired
   KafkaTemplate<String, IBMDomainActivityTweet> kafkaTemplate;
+  @Autowired
+  KafkaTemplate<String,String> kafkaTemplate2;
 
     @KafkaListener(topics = "tweet3", groupId = "group_id")
       public void consume(AnalyzedActivityTweet message){
@@ -44,10 +46,10 @@ public class KafkaConsumer {
       else{
         NEUTRAL++;
       }
-      if(NEGATIVE>1000){
-        System.out.println("alert");
+      if(NEGATIVE==5) {
+        System.out.println("sent for email");
+        kafkaTemplate2.send("mail", "Alert! " + NEGATIVE + " Negative tweets found");
       }
-
       System.out.println("Positive"+POSITIVE);
       System.out.println("Negative"+NEGATIVE);
       System.out.println("Neutral"+NEUTRAL);

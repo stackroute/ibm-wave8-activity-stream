@@ -65,10 +65,6 @@
             <artifactId>spring-boot-starter-web</artifactId>
             <version>2.1.8.RELEASE</version>
         </dependency>
-      <dependency>
-        <groupId>com.stackroute</groupId>
-        <artifactId>IRC</artifactId>
-      </dependency>
         <!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
         <dependency>
             <groupId>com.google.code.gson</groupId>
@@ -88,6 +84,12 @@
         <artifactId>lombok</artifactId>
         <version>1.18.4</version>
       </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+            <version>2.1.8.RELEASE</version>
+            <scope>compile</scope>
+        </dependency>
 
     </dependencies>
 

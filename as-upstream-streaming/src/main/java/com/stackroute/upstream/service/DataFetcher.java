@@ -79,6 +79,7 @@ public class DataFetcher {
 ////                            System.out.println(activity);
 //
                             kafkaTemplate.send("tweet1", as_tweet);
+                            kafkaTemplate.send("raw",as_tweet);
 
 //                            System.out.println("}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}");
 

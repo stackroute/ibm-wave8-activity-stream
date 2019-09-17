@@ -3,6 +3,7 @@ package com.stackroute.listener;
 import com.fasterxml.jackson.databind.ObjectMapper;
 //import User;
 import com.stackroute.model.ActivityTweet;
+import com.stackroute.model.ProcessedTweet;
 import com.stackroute.model.Tweet;
 import com.stackroute.service.TwitterService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +16,14 @@ public class KafkaConsumer {
     @Autowired
     private TwitterService twitterService;
 
-    @KafkaListener(topics = "tweet1")
+
+    @KafkaListener(topics = "ibmtweet",groupId ="group_id2", containerFactory = "kafkaListenerContainerFactory2")
+    public void consumeProcessedTweet(ProcessedTweet processedTweet)
+    {
+        System.out.println("Processed Tweet is:- "+processedTweet);
+        twitterService.saveProcessedTweet(processedTweet);
+    }
+    @KafkaListener(topics = "raw", groupId = "group_id", containerFactory = "kafkaListenerContainerFactory")
     public void consume(ActivityTweet activityTweet) {
 //      System.out.println(activityTweet);
 //      System.out.println(activityTweet);
