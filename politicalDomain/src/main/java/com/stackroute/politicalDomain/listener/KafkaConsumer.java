@@ -18,7 +18,7 @@ public class KafkaConsumer {
     @Autowired
     KafkaTemplate<String,String> kafkaTemplate2;
 
-    @KafkaListener(topics = "tweet3", groupId = "group_id")
+    @KafkaListener(topics = "tweet4", groupId = "group_id")
     public void consume(AnalyzedActivityTweet message){
 
         System.out.println("Analyzed data:-   "+message);

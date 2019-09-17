@@ -33,5 +33,6 @@ public class KafkaConsumer {
       analyzedActivityTweet.setTimeStamp(message.getTimeStamp());
       analyzedActivityTweet.setUuid(message.getUuid());
       kafkaTemplate.send("tweet3",analyzedActivityTweet);
+      kafkaTemplate.send("tweet4",analyzedActivityTweet);
     }
 }
