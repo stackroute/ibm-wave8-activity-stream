@@ -2,17 +2,18 @@
     display: flex;
     flex-direction: column;
     height: 100%;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
 }
 
-.parent-layout > app-real-timegraph {
-    height: 400px;
-}
+// .parent-layout > app-real-timegraph {
+//     height: 400px;
+// }
 
 .child-layout-1 {
     display: flex;
     justify-content: space-around;
+   
 }
 
 
