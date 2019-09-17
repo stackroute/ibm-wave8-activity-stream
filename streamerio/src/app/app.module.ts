@@ -11,13 +11,23 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { MatDividerModule } from '@angular/material/divider';
+import { PoliticalNDADashBoardComponent } from './political-nda-dash-board/political-nda-dash-board.component';
+import { RealTimegraphComponent } from './real-timegraph/real-timegraph.component';
+import { BarChartComponent } from './bar-chart/bar-chart.component';
+import { PieChartComponent } from './pie-chart/pie-chart.component';
+import { MultiLineChartComponent } from './multi-line-chart/multi-line-chart.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    PoliticalNDADashBoardComponent,
+    RealTimegraphComponent,
+    BarChartComponent,
+    PieChartComponent,
+    MultiLineChartComponent
   ],
   imports: [
     BrowserModule,
