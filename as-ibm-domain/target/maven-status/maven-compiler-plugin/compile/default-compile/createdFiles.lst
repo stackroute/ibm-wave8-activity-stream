@@ -1,10 +1,12 @@
 com/stackroute/model/ActivityTweet.class
+com/stackroute/model/SentimentCounterClass.class
 com/stackroute/model/TwitterEntity.class
 com/stackroute/model/Place.class
 com/stackroute/model/Sizes.class
 com/stackroute/model/TwitterActor.class
 com/stackroute/model/Size.class
 com/stackroute/model/UserMention.class
+com/stackroute/config/KafkaConfigForMail.class
 com/stackroute/model/SentimentTweet.class
 com/stackroute/SentimentCalculator/SentimentAnalysis.class
 com/stackroute/model/IBMDomainActivityTweet.class

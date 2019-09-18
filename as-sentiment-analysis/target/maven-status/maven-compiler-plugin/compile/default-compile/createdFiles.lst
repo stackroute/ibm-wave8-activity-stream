@@ -13,6 +13,7 @@ com/stackroute/model/User.class
 com/stackroute/model/Tweet.class
 com/stackroute/model/Media.class
 com/stackroute/ASSentiment.class
+com/stackroute/model/TweetAfterCleansing.class
 com/stackroute/SentimentClassification.class
 com/stackroute/model/TwitterURL.class
 com/stackroute/model/Geo.class

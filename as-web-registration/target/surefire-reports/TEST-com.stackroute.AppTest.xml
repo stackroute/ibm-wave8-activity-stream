@@ -4,7 +4,7 @@
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="12.0.2+10"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-12-oracle/lib"/>
-    <property name="maven.multiModuleProjectDirectory" value="/home/clinton/Desktop/Stuffs/MyWebSite/ibm-wave8-activity-stream-master/activity-stream-app"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/clinton/Desktop/ibm-wave8-activity-stream"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="java.vendor.url" value="https://java.oracle.com/"/>
     <property name="path.separator" value=":"/>
@@ -12,7 +12,7 @@
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
     <property name="user.country" value="IN"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="user.dir" value="/home/clinton/Desktop/Stuffs/MyWebSite/ibm-wave8-activity-stream-master/activity-stream-app"/>
+    <property name="user.dir" value="/home/clinton/Desktop/ibm-wave8-activity-stream"/>
     <property name="java.vm.compressedOopsMode" value="32-bit"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="java.runtime.version" value="12.0.2+10"/>

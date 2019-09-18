@@ -2,10 +2,10 @@
 <testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-09-15T17:06:39 IST" name="com.stackroute.ASSentimentTest" finished-at="2019-09-15T17:06:39 IST" duration-ms="12">
+  <suite started-at="2019-09-18T10:42:02 IST" name="com.stackroute.ASSentimentTest" finished-at="2019-09-18T10:42:02 IST" duration-ms="8">
     <groups>
     </groups>
-    <test started-at="2019-09-15T17:06:39 IST" name="Command line test" finished-at="2019-09-15T17:06:39 IST" duration-ms="12">
+    <test started-at="2019-09-18T10:42:02 IST" name="Command line test" finished-at="2019-09-18T10:42:02 IST" duration-ms="8">
     </test> <!-- Command line test -->
   </suite> <!-- com.stackroute.ASSentimentTest -->
 </testng-results>
