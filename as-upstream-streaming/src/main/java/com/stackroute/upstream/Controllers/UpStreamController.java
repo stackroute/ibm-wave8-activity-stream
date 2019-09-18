@@ -17,8 +17,8 @@ public class UpStreamController {
 
     @PostConstruct
     public String sayHello() throws IOException {
-        dataFetcher.fetchData("India");
-        dataFetcher.fetchData("Pakistan");
+        dataFetcher.fetchData("Politics");
+        dataFetcher.fetchData("IBM");
 
 
         System.out.println("--------------");

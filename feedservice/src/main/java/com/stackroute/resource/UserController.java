@@ -1,4 +1,4 @@
-package com.techprimers.springbootwebsocketexample.resource;
+package com.stackroute.resource;
 
 import com.techprimers.springbootwebsocketexample.model.User;
 import com.techprimers.springbootwebsocketexample.model.UserResponse;

@@ -8,6 +8,8 @@ import com.stackroute.repository.TwitterRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class TwitterServiceImpl implements TwitterService  {
   @Autowired
@@ -25,5 +27,15 @@ public class TwitterServiceImpl implements TwitterService  {
   public ProcessedTweet saveProcessedTweet(ProcessedTweet processedTweet) {
     return processedTweetRepository.save(processedTweet);
 
+  }
+  @Override
+  public List<ProcessedTweet> getAll()
+  {
+    return processedTweetRepository.getAll();
+  }
+
+  @Override
+  public List<ProcessedTweet> getAllPolitics() {
+    return processedTweetRepository.getPoliticalTweets();
   }
 }

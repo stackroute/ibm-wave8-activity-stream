@@ -1,7 +1,6 @@
-package com.techprimers.springbootwebsocketexample.listener;
-import com.techprimers.springbootwebsocketexample.model.ActivityTweet;
-import com.techprimers.springbootwebsocketexample.model.UserResponse;
-import com.techprimers.springbootwebsocketexample.service.FeedService;
+package  com.stackroute.listener;
+import com.stackroute.model.ActivityTweet;
+import com.stackroute.service.FeedService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Service;

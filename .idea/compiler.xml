@@ -2,21 +2,20 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
-      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="as-upstream-streaming" />
         <module name="as-ibm-domain" />
-        <module name="politicalDomain" />
         <module name="Login-Authentication-Microservice" />
+        <module name="as-upstream-streaming" />
+        <module name="User-Registration" />
+        <module name="politicalDomain" />
+        <module name="as-sentiment-analysis" />
         <module name="as-downstream-save" />
         <module name="spring-boot-websocket-example" />
-        <module name="User-Registration" />
         <module name="Data-Cleaning" />
         <module name="NotifyService" />
-        <module name="as-sentiment-analysis" />
         <module name="mainapp" />
         <module name="twitterAdapter" />
       </profile>

@@ -1,6 +1,6 @@
-package com.techprimers.springbootwebsocketexample.service;
+package com.stackroute.service;
 
-import com.techprimers.springbootwebsocketexample.model.ActivityTweet;
+import com.stackroute.model.ActivityTweet;
 import org.springframework.stereotype.Service;
 
 @Service

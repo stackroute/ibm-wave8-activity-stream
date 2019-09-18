@@ -35,7 +35,8 @@ public class KafkaConsumer {
         politicalDomainActivityTweet.setSentimentResult(message.getSentimentResult());
         politicalDomainActivityTweet.setTimeStamp(message.getTimeStamp());
         politicalDomainActivityTweet.setUuid(message.getUuid());
-        politicalDomainActivityTweet.setDomain(domain);
+        politicalDomainActivityTweet.setDomain("Politics");
+        politicalDomainActivityTweet.setSubDomain(domain);
         kafkaTemplate.send("ibmtweet",politicalDomainActivityTweet);
         kafkaTemplate.send("socket",politicalDomainActivityTweet);
         if(score<2){
