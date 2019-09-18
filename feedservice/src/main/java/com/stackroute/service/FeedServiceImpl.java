@@ -18,6 +18,8 @@ public class FeedServiceImpl implements FeedService {
         activityTweet1.setContent(activityTweet.getContent());
         activityTweet1.setObject(activityTweet.getObject());
         activityTweet1.setVerb(activityTweet.getVerb());
+        activityTweet1.setDomain(activityTweet.getDomain());
+        activityTweet1.setSubdomain(activityTweet.getSubdomain());
 
         return activityTweet1;
     }

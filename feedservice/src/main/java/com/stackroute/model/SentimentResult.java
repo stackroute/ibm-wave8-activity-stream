@@ -8,8 +8,7 @@ import lombok.*;
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
-public class TwitterActor {
-    String objectType;
-    String id;
-    String displayName;
+public class SentimentResult {
+    String sentimentType;
+    float sentimentScore;
 }

@@ -1,6 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import * as Chart from 'chart.js';
-import { Options } from 'selenium-webdriver/opera';
 @Component({
   selector: 'app-pie-chart',
   templateUrl: './pie-chart.component.html',
@@ -8,36 +7,35 @@ import { Options } from 'selenium-webdriver/opera';
 })
 export class PieChartComponent implements OnInit {
 piechart:any
-  constructor() { 
-    
-  }
-  @Input()
-  data: any
-  ngOnInit() {
-    let inputData={
-      labels: [],
-      plotData: [],
-    }
-  this.data.subscribe(data =>{
-    inputData=data
-    console.log(data)
-    let plot={
-      type:'pie',
-          data:{
-              labels:inputData.labels,
-               datasets:[{
-                 data:inputData.plotData,
-                 backgroundColor:["red","orange","green","blue"],
-               }],
-             },
-             
-  } 
+  constructor() { }
 
-  console.log(inputData.plotData)
-  this.piechart=new Chart('pie', plot);
-  
-  })
-  }
+  ngOnInit() {
+   this.piechart=new Chart('pie',
+    {
+      type:'pie',
+      options:{
+        //responsive:true,
+       legend:{
+         position:'right',
+         labels:{
+          padding:20,
+        },
+      },
+         animation:{
+           animateScale:true,
+           animateRotate:true
+         }
+       },
+       data:{
+         datasets:[{
+           data:[45,30,50,25,15],
+           backgroundColor:["red","orange","brown","green","blue"],
+           label:'dataset'
+         }],
+         labels:['Human Resource','Finance','Health','External Affairs','General']
+       },      
+    })
+}
 
   }
 

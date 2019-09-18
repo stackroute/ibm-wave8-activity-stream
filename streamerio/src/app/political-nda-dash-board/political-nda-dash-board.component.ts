@@ -11,7 +11,6 @@ import { Subject } from 'rxjs';
 })
 export class PoliticalNDADashBoardComponent implements OnInit {
   barChartData: any = new Subject();
-  pieChartData:any =new Subject();
 
   constructor(private authenticationService: AuthenticationService, private router: Router, private activity: ActivityService) {
 
@@ -22,8 +21,7 @@ export class PoliticalNDADashBoardComponent implements OnInit {
     this.activity.getActivities().subscribe(data => {
       console.log(data)
       this.populateBarChartData(data)
-      this.populatePieChartData(data)
-      this.populateTimeChartData(data)
+
     })
 
   }
@@ -57,58 +55,19 @@ export class PoliticalNDADashBoardComponent implements OnInit {
           VeryPositive++
         }
       })
-      console.log(lables)
-     // lables = lables.sort();
+      lables = lables.sort();
 
-      console.log(lables.sort())
+      console.log(lables)
       console.log("SCORES:::", Negative, Positive, VeryNegative, VeryPositive, Neutral)
 
       this.barChartData.next({
         xAxisData : [VeryNegative, Negative, Neutral, Positive, VeryPositive],
-        lables : ["Very Negative", "Negative", "Neutral", "Positive", "Very Positive"],
+        lables : lables,
         ymax: ymax,
         ymin: ymin
       }) 
+      
   }
-  populatePieChartData(data){
-    let general=0
-    let health=0
-    let finance=0
-    let foreign=0
-    let labels=[]
-    let plotData=new Array(labels.length)
-    data.map(e=>{
-      if(labels.indexOf(e.subdomain) ==-1){
-        labels.push(e.subdomain);
-      }
-      if(e.subdomain == "Political General"){
-        general++
-      }else if(e.subdomain == "health"){
-        health++
-      }
-      else if(e.subdomain == "finance"){
-        finance++
-      }else if(e.subdomain == "foreign"){
-        foreign++
-      }    
-  })
-  console.log(labels)
-  console.log(general,health,finance,foreign)
-
-this.pieChartData.next({
-  plotData:[health,finance,general,foreign],
-  labels : labels,
-}) 
-  }
-  populateTimeChartData(data){
-    let hour
-    data.map(e=>{
-      //hour=e.timestamp
-      //hour=e.timestamp | date: ['yyyy/MM/dd h:mm:ss a']
-    })
-    console.log(hour)
-  }
-  
   logout() {
     this.authenticationService.logout();
     this.router.navigate(['']);
