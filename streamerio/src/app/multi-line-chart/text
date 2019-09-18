@@ -9,5 +9,5 @@
   }
     #multiline{
         max-height: 400px;
-        width: 100px;
+        width: 1000px;
     }
