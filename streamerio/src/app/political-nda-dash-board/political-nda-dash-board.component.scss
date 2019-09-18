@@ -1,3 +1,19 @@
+
+.spacer {
+    flex: 1 1 auto;
+  }
+
+  .navbar {
+    overflow: hidden;
+    background-color:rgb(26, 24, 155);
+    position: fixed;
+    top: 0;
+    display:flex;
+    overflow-x:hidden;
+    flex: 1 1 auto;
+    z-index:9;
+  }
+
 .parent-layout {
     display: flex;
     flex-direction: column;

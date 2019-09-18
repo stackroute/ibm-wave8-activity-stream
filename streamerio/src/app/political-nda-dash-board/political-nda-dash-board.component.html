@@ -1,4 +1,10 @@
-
+<mat-toolbar class="navbar">
+    <mat-toolbar-row>
+       <span class="spacer"></span>
+       <a mat-button  matTooltip="You will be logged out"
+       (click)="logout()">Logout</a>
+    </mat-toolbar-row>
+  </mat-toolbar> 
 <div class="parent-layout">
     <app-real-timegraph></app-real-timegraph>
     <div class="child-layout-1">
