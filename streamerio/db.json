@@ -6,7 +6,13 @@
       "verb":"TWEET",
       "actor":{"objectType":"person","id":"ISMAIL BARRI","displayName":"barri_ismail"},
       "content":"majorgauravarya India have a write constitution and a parliamentary democracy yet mr Modi have show how constitu http : tcopsixatcipn ",
-      "object":{"objectType":"tweet","id":"1172734460925816832"}
+      "object":{"objectType":"tweet","id":"1172734460925816832"},
+      "sentimentResult": {
+        "sentimentType": "Positive",
+        "sentimentScore": 1.0
+      },
+      "domain":"Political",
+      "subdomain":"health"
     },
     {
       "timestamp": "1568611297912",
@@ -14,7 +20,13 @@
       "verb":"TWEET",
       "actor":{"objectType":"person","id":"ISMAIL BARRI","displayName":"barri_ismail"},
       "content":"majorgauravarya India have a write constitution and a parliamentary democracy yet mr Modi have show how constitu http : tcopsixatcipn ",
-      "object":{"objectType":"tweet","id":"1172734460925816832"}
+      "object":{"objectType":"tweet","id":"1172734460925816832"},
+      "sentimentResult": {
+        "sentimentType": "Negative",
+        "sentimentScore": 1.0
+      },
+      "domain":"Political",
+      "subdomain":"health"
     },
     {
       "timestamp": "1568611297912",
@@ -22,7 +34,13 @@
       "verb":"TWEET",
       "actor":{"objectType":"person","id":"ISMAIL BARRI","displayName":"barri_ismail"},
       "content":"majorgauravarya India have a write constitution and a parliamentary democracy yet mr Modi have show how constitu http : tcopsixatcipn ",
-      "object":{"objectType":"tweet","id":"1172734460925816832"}
+      "object":{"objectType":"tweet","id":"1172734460925816832"},
+      "sentimentResult": {
+        "sentimentType": "Positive",
+        "sentimentScore": 1.0
+      },
+      "domain":"Political",
+      "subdomain":"finance"
     },
     {
       "timestamp": "1568611297912",
@@ -30,7 +48,13 @@
       "verb":"TWEET",
       "actor":{"objectType":"person","id":"ISMAIL BARRI","displayName":"barri_ismail"},
       "content":"majorgauravarya India have a write constitution and a parliamentary democracy yet mr Modi have show how constitu http : tcopsixatcipn ",
-      "object":{"objectType":"tweet","id":"1172734460925816832"}
+      "object":{"objectType":"tweet","id":"1172734460925816832"},
+      "sentimentResult": {
+        "sentimentType": "Negative",
+        "sentimentScore": 1.0
+      },
+      "domain":"Political",
+      "subdomain":"finance"
     },
     {
       "timestamp": "1568611297912",
@@ -38,7 +62,13 @@
       "verb":"TWEET",
       "actor":{"objectType":"person","id":"ISMAIL BARRI","displayName":"barri_ismail"},
       "content":"majorgauravarya India have a write constitution and a parliamentary democracy yet mr Modi have show how constitu http : tcopsixatcipn ",
-      "object":{"objectType":"tweet","id":"1172734460925816832"}
+      "object":{"objectType":"tweet","id":"1172734460925816832"},
+      "sentimentResult": {
+        "sentimentType": "Negative",
+        "sentimentScore": 1.0
+      },
+      "domain":"Political",
+      "subdomain":"finance"
     },
     {
       "timestamp": "1568611297912",
@@ -46,7 +76,11 @@
       "verb":"TWEET",
       "actor":{"objectType":"person","id":"ISMAIL BARRI","displayName":"barri_ismail"},
       "content":"majorgauravarya India have a write constitution and a parliamentary democracy yet mr Modi have show how constitu http : tcopsixatcipn ",
-      "object":{"objectType":"tweet","id":"1172734460925816832"}
+      "object":{"objectType":"tweet","id":"1172734460925816832"},
+      "sentimentResult": {
+        "sentimentType": "Positive",
+        "sentimentScore": 1.0
+      }
     }
     ]
   }

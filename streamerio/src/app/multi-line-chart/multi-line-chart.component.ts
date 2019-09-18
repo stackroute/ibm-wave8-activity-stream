@@ -44,6 +44,12 @@ linechart:any
         //         tension: 0 // disables bezier curves
         //     }
         // },
+        legend:{
+          position:'right',
+          labels:{
+            padding:30,
+          },
+        },
           responsive:true,
           tooltips:{
             mode:'index',
