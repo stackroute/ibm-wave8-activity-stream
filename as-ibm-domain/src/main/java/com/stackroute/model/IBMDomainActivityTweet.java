@@ -12,10 +12,10 @@ public class IBMDomainActivityTweet {
 
     private String timeStamp;
     private String uuid;
-    String verb;
-    TwitterActor actor;
-    String content;
-    MyCustomTweet object;
-    SentimentResult sentimentResult;
-    String domain;
+    private String verb;
+    private TwitterActor actor;
+    private String content;
+    private MyCustomTweet object;
+    private SentimentResult sentimentResult;
+    private String domain;
 }

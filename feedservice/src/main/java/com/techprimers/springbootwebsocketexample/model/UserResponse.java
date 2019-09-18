@@ -1,16 +1,13 @@
 package com.techprimers.springbootwebsocketexample.model;
 
+
+import lombok.*;
+
+@Data
+@Setter
+@Getter
+@AllArgsConstructor
+@NoArgsConstructor
 public class UserResponse {
     String content;
-
-    public UserResponse() {
-    }
-
-    public String getContent() {
-        return content;
-    }
-
-    public UserResponse(String content) {
-        this.content = content;
-    }
 }

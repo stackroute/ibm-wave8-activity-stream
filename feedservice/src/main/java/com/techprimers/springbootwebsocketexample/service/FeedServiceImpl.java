@@ -15,11 +15,11 @@ public class FeedServiceImpl implements FeedService {
         TwitterActor actor=activityTweet.getActor();
         String  verb=activityTweet.getVerb();
         MyCustomTweet myCustomTweet=activityTweet.getObject();*/
-ActivityTweet activityTweet1=new ActivityTweet();
-activityTweet1.setActor(activityTweet.getActor());
-activityTweet1.setContent(activityTweet.getContent());
-activityTweet1.setObject(activityTweet.getObject());
-activityTweet1.setVerb(activityTweet.getVerb());
+        ActivityTweet activityTweet1=new ActivityTweet();
+        activityTweet1.setActor(activityTweet.getActor());
+        activityTweet1.setContent(activityTweet.getContent());
+        activityTweet1.setObject(activityTweet.getObject());
+        activityTweet1.setVerb(activityTweet.getVerb());
 
 
 
