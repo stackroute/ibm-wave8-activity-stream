@@ -27,8 +27,10 @@ barchart:any
                 fill:false,
               }
             ]
-          }
-       });
+          },
+          
+       },
+       );
   }
 
 }

@@ -10,7 +10,7 @@ linechart:any
   constructor() { }
 
   ngOnInit() {
-    this.linechart=new Chart('canvas',{
+    this.linechart=new Chart('multiline',{
       type:'line',
       data:{
       labels:['Jan','Feb','March','April','May','June'],
@@ -39,6 +39,11 @@ linechart:any
           ]
         },
         options:{
+        //   elements: {
+        //     line: {
+        //         tension: 0 // disables bezier curves
+        //     }
+        // },
           responsive:true,
           tooltips:{
             mode:'index',
@@ -57,6 +62,11 @@ linechart:any
                 }
               }],
               yAxes:[{
+              //   ticks: {
+              //     max: 1000,
+              //     min: 100,
+              //     stepSize: 200
+              // },
                 display:true,
                 scaleLabel:{
                   display:true,
