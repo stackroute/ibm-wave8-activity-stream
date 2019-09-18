@@ -69,6 +69,9 @@ export class RealTimegraphComponent implements OnInit, AfterViewInit {
             labels: ['7.0 AM', '8.0 AM', '9.0 AM', '10.0 AM','11.0 AM','12.0 AM','1.0 PM']
         },
         options: {
+            legend:{
+                display:false
+            },
             elements: {
                 line: {
                     tension: 0 // disables bezier curves

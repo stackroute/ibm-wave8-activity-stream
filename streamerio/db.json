@@ -54,7 +54,7 @@
         "sentimentScore": 1.0
       },
       "domain":"Political",
-      "subdomain":"finance"
+      "subdomain":"foreign"
     },
     {
       "timestamp": "1568611297912",
@@ -64,7 +64,7 @@
       "content":"majorgauravarya India have a write constitution and a parliamentary democracy yet mr Modi have show how constitu http : tcopsixatcipn ",
       "object":{"objectType":"tweet","id":"1172734460925816832"},
       "sentimentResult": {
-        "sentimentType": "Negative",
+        "sentimentType": "Very Negative",
         "sentimentScore": 1.0
       },
       "domain":"Political",
@@ -80,7 +80,9 @@
       "sentimentResult": {
         "sentimentType": "Positive",
         "sentimentScore": 1.0
-      }
+      },
+      "domain":"Political",
+      "subdomain":"Political General"
     }
     ]
   }
