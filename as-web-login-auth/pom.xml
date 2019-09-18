@@ -109,6 +109,8 @@
       <scope>compile</scope>
     </dependency>
 
+    <!-- https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt -->
+
   </dependencies>
 
   <build>
