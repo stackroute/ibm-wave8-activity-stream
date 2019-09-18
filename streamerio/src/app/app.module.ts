@@ -16,6 +16,12 @@ import { RealTimegraphComponent } from './real-timegraph/real-timegraph.componen
 import { BarChartComponent } from './bar-chart/bar-chart.component';
 import { PieChartComponent } from './pie-chart/pie-chart.component';
 import { MultiLineChartComponent } from './multi-line-chart/multi-line-chart.component';
+import { OrganisationIbmDashboardComponent } from './organisation-ibm-dashboard/organisation-ibm-dashboard.component';
+
+
+// Services
+import { ActivityService } from './service/activity.service';
+
 
 
 @NgModule({
@@ -27,7 +33,8 @@ import { MultiLineChartComponent } from './multi-line-chart/multi-line-chart.com
     RealTimegraphComponent,
     BarChartComponent,
     PieChartComponent,
-    MultiLineChartComponent
+    MultiLineChartComponent,
+    OrganisationIbmDashboardComponent
   ],
   imports: [
     BrowserModule,
@@ -51,7 +58,7 @@ import { MultiLineChartComponent } from './multi-line-chart/multi-line-chart.com
     HttpClientModule,
     MatDividerModule
   ],
-  providers: [],
+  providers: [ActivityService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -14,9 +14,13 @@ piechart:any
     {
       type:'pie',
       options:{
-        responsive:true,
+        //responsive:true,
        legend:{
-         position:'top',},
+         position:'right',
+         labels:{
+          padding:20,
+        },
+      },
          animation:{
            animateScale:true,
            animateRotate:true
@@ -29,8 +33,7 @@ piechart:any
            label:'dataset'
          }],
          labels:['Human Resource','Finance','Health','External Affairs','General']
-       }
-      
+       },      
     })
 }
 
