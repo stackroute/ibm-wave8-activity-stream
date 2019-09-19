@@ -103,8 +103,6 @@ this.pieChartData.next({
   populateTimeChartData(data){
     let hour
     data.map(e=>{
-      //hour=e.timestamp
-      //hour=e.timestamp | date: ['yyyy/MM/dd h:mm:ss a']
     })
     console.log(hour)
   }

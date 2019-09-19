@@ -7,13 +7,14 @@ import { Options } from 'selenium-webdriver/opera';
   styleUrls: ['./pie-chart.component.scss']
 })
 export class PieChartComponent implements OnInit {
-piechart:any
+   piechart:any
   constructor() { 
     
   }
   @Input()
   data: any
   ngOnInit() {
+   
     let inputData={
       labels: [],
       plotData: [],
@@ -23,6 +24,11 @@ piechart:any
     console.log(data)
     let plot={
       type:'pie',
+      options:{
+        legend:{
+          position:'right' as 'right'
+        }
+      },
           data:{
               labels:inputData.labels,
                datasets:[{
@@ -34,7 +40,7 @@ piechart:any
   } 
 
   console.log(inputData.plotData)
-  this.piechart=new Chart('pie', plot);
+  this.piechart = new Chart('pie', plot);
   
   })
   }

@@ -78,6 +78,13 @@ export class RealTimegraphComponent implements OnInit, AfterViewInit {
                 }
             },
             scales: {
+                xAxes:[
+                    {
+                        gridLines:{
+                            display:false
+                        }
+                    }
+                ],
                 yAxes: [{
                     ticks: {
                         suggestedMin: 50,

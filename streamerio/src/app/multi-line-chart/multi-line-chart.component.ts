@@ -61,7 +61,9 @@ linechart:any
           },
           scales:{
             xAxes:[{
-                display:true,
+              gridLines:{
+                display:false,
+              },
                 scaleLabel:{
                   display:true,
                   labelString:'Month'

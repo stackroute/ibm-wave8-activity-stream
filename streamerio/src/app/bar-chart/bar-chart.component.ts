@@ -36,7 +36,13 @@ export class BarChartComponent implements OnInit {
               display:false
             },
             scales: {
-    
+              xAxes:[
+                {
+                  gridLines:{
+                    display:false,
+                  },
+                }
+              ],
               yAxes: [{
                 ticks: {
                   max: inputData.ymax,
@@ -59,7 +65,6 @@ export class BarChartComponent implements OnInit {
               }
             ]
           },
-    
         }
         console.log(inputData.xAxisData)
         this.barChart = new Chart('bar', plot);
