@@ -1,4 +1,5 @@
 FROM openjdk:11
-ADD ./target/as-downstream-save-1.0-SNAPSHOT.jar as-downstream.jar
-EXPOSE 8096
-ENTRYPOINT ["java","-jar","as-downstream.jar"]
+WORKDIR /app
+COPY ./target .
+ENTRYPOINT ["java","-jar","as-downstream-save-1.0-SNAPSHOT.jar"]
+
