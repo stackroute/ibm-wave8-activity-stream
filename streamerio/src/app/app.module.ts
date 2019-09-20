@@ -17,10 +17,9 @@ import { BarChartComponent } from './bar-chart/bar-chart.component';
 import { PieChartComponent } from './pie-chart/pie-chart.component';
 import { MultiLineChartComponent } from './multi-line-chart/multi-line-chart.component';
 import { OrganisationIbmDashboardComponent } from './organisation-ibm-dashboard/organisation-ibm-dashboard.component';
-
-
 // Services
 import { ActivityService } from './service/activity.service';
+import { RealTimeOrganisationChartComponent } from './real-time-organisation-chart/real-time-organisation-chart.component';
 
 
 
@@ -34,7 +33,8 @@ import { ActivityService } from './service/activity.service';
     BarChartComponent,
     PieChartComponent,
     MultiLineChartComponent,
-    OrganisationIbmDashboardComponent
+    OrganisationIbmDashboardComponent,
+    RealTimeOrganisationChartComponent
   ],
   imports: [
     BrowserModule,

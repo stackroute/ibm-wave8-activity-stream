@@ -6,6 +6,7 @@ import { BehaviorSubject, Observable } from 'rxjs';
 export class User {
   constructor(
     public status: string,
+    public role: string,
   ) { }
 
 }
@@ -30,9 +31,9 @@ export class AuthenticationService {
           .pipe(map(user => {
               // login successful if there's a jwt token in the response
               if (user && user.token) {
-
                   this.currentUserSubject.next(user);
               }
+              //console.log(user);
               return user;
           }));
   }
