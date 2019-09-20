@@ -1,8 +1,8 @@
 com/stackroute/model/ActivityTweet.class
 com/stackroute/model/Bounding_box.class
 com/stackroute/service/CleaningService.class
-com/stackroute/model/Place.class
 com/stackroute/model/Sizes.class
+com/stackroute/model/Place.class
 com/stackroute/model/TwitterActor.class
 com/stackroute/service/ServiceImpl.class
 com/stackroute/model/Size.class

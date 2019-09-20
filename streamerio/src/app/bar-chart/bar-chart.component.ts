@@ -32,9 +32,6 @@ export class BarChartComponent implements OnInit {
         let plot = {
           type: 'bar',
           options: {
-            legend:{
-              display:false
-            },
             scales: {
               xAxes:[
                 {
@@ -59,7 +56,7 @@ export class BarChartComponent implements OnInit {
               {
                 type: 'bar',
                 label: 'sentiment score',
-                data: inputData.xAxisData,
+                data: inputData.xAxisData.filter(e => e !== 0),
                 backgroundColor: 'rgba(244,67,54)',
                 fill: false,
               }

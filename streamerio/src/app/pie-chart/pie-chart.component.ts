@@ -1,6 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
 import * as Chart from 'chart.js';
-import { Options } from 'selenium-webdriver/opera';
 @Component({
   selector: 'app-pie-chart',
   templateUrl: './pie-chart.component.html',

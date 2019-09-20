@@ -11,7 +11,7 @@ import { Subject } from 'rxjs';
 })
 export class PoliticalNDADashBoardComponent implements OnInit {
   barChartData: any = new Subject();
-  pieChartData:any =new Subject();
+  pieChartData:any = new Subject();
 
   constructor(private authenticationService: AuthenticationService, private router: Router, private activity: ActivityService) {
 
@@ -23,7 +23,7 @@ export class PoliticalNDADashBoardComponent implements OnInit {
       console.log(data)
       this.populateBarChartData(data)
       this.populatePieChartData(data)
-      this.populateTimeChartData(data)
+
     })
 
   }
@@ -57,18 +57,18 @@ export class PoliticalNDADashBoardComponent implements OnInit {
           VeryPositive++
         }
       })
-      console.log(lables)
-     // lables = lables.sort();
+      lables = lables.sort();
 
-      console.log(lables.sort())
+      console.log(lables)
       console.log("SCORES:::", Negative, Positive, VeryNegative, VeryPositive, Neutral)
 
       this.barChartData.next({
         xAxisData : [VeryNegative, Negative, Neutral, Positive, VeryPositive],
-        lables : ["Very Negative", "Negative", "Neutral", "Positive", "Very Positive"],
+        lables : lables,
         ymax: ymax,
         ymin: ymin
       }) 
+      
   }
   populatePieChartData(data){
     let general=0
@@ -100,13 +100,7 @@ this.pieChartData.next({
   labels : labels,
 }) 
   }
-  populateTimeChartData(data){
-    let hour
-    data.map(e=>{
-    })
-    console.log(hour)
-  }
-  
+
   logout() {
     this.authenticationService.logout();
     this.router.navigate(['']);

@@ -1,0 +1,13 @@
+.card4{
+   // margin-top: 2rem;
+    margin-bottom: 30px;
+    width: 1190px;
+
+    margin-left: -1%;
+    // margin-right: 0rem;
+    max-height: 500px;
+  }
+    #multiline{
+        max-height: 400px;
+        width: 1000px;
+    }

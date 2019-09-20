@@ -1,4 +1,4 @@
-package  com.stackroute.model;
+package com.stackroute.model;
 
 import lombok.*;
 

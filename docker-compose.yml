@@ -1,0 +1,162 @@
+version: '2.1'
+services:
+  as-data-cleaning:
+    build: as-data-cleaning
+    container_name: as-data-cleaning-service-container
+    restart: always
+    network_mode: host
+    hostname: localhost
+    depends_on:
+      - as-upstream-streaming
+      - kafka
+      - zookeeper
+    healthcheck:
+      test: "exit 0"
+
+  zookeeper:
+    image: wurstmeister/zookeeper
+    network_mode: host
+    ports:
+      - "2181:2181"
+    environment:
+      ZOO_MY_ID: 1
+      ZOO_PORT: 2181
+      ZOO_SERVERS: server.1=zoo1:2888:3888
+
+  kafka:
+      image: wurstmeister/kafka
+      network_mode: host
+      ports:
+        - "9092"
+      depends_on:
+        - zookeeper
+      environment:
+        KAFKA_ADVERTISED_HOST_NAME: localhost
+        KAFKA_ZOOKEEPER_CONNECT: localhost:2181
+        # KAFKA_CREATE_TOPICS: "tweet1:1:1,raw:1:1:compact,tweet2:1:1,tweet3:1:1,tweet4:1:1,ibmtweet:1:1,socket:1:1,mail:1:1"
+
+  mysql: 
+    image: mysql
+    network_mode: host
+    environment:
+       MYSQL_ROOT_PASSWORD : Root@123
+       MYSQL_DATABASE : db
+      
+  as-web-login-auth: 
+    build: as-web-login-auth
+    network_mode: host
+    restart: always
+    container_name: authentication-service
+    hostname: localhost
+    depends_on:
+      - mysql
+
+  as-downstream-save:
+    image: as-downstream-save-service-image
+    build: as-downstream-save
+    container_name: as-downstream-save-service-container
+    restart: always
+    network_mode: host
+    hostname: localhost
+    depends_on:
+      - notifyservice
+      - kafka
+      - zookeeper
+      - cassandra
+    healthcheck:
+      test: "exit 0"
+
+  cassandra:
+    image: 'bitnami/cassandra:3'
+    network_mode: host
+    ports:
+      - '9042:9042'
+    environment:
+      - CASSANDRA_SEEDS=cassandra
+      - CASSANDRA_PASSWORD_SEEDER=yes
+      - CASSANDRA_PASSWORD=cassandra
+
+  as-ibm-domain:
+    build: as-ibm-domain
+    container_name: as-ibm-domain-service-container
+    restart: always
+    network_mode: host
+    hostname: localhost
+    depends_on:
+      - politicaldomain
+      - kafka
+      - zookeeper
+    healthcheck:
+      test: "exit 0"
+  
+  as-sentiment-analysis:
+    build: as-sentiment-analysis
+    container_name: as-sentiment-analysis-service-container
+    restart: always
+    network_mode: host
+    hostname: localhost
+    depends_on:
+      - as-data-cleaning
+      - kafka
+      - zookeeper
+    healthcheck:
+      test: "exit 0"
+  
+  as-upstream-streaming:
+    build: as-upstream-streaming
+    container_name: as-upstream-streaming-service-container
+    restart: always
+    network_mode: host
+    hostname: localhost
+    depends_on:
+      - kafka
+      - zookeeper
+    healthcheck:
+      test: "exit 0"
+  
+  feedservice:
+    build: feedservice
+    container_name: feed-service-container
+    restart: always
+    network_mode: host
+    hostname: localhost
+    depends_on:
+      - as-ibm-domain
+      - kafka
+      - zookeeper
+    healthcheck:
+      test: "exit 0"
+
+  notifyservice:
+    build: notifyService
+    container_name: notify-service-container
+    restart: always
+    network_mode: host
+    hostname: localhost
+    depends_on:
+      - feedservice
+      - kafka
+      - zookeeper
+    healthcheck:
+      test: "exit 0"
+
+  politicaldomain:
+    build: politicalDomain
+    container_name: politicaldomain-service-container
+    restart: always
+    network_mode: host
+    hostname: localhost
+    depends_on:
+      - as-sentiment-analysis
+      - kafka
+      - zookeeper
+    healthcheck:
+      test: "exit 0"
+  
+  streamerio:
+    build: streamerio
+    container_name: streamerio
+    restart: always
+    network_mode: host
+    hostname: localhost
+

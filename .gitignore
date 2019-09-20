@@ -59,6 +59,8 @@ local.properties
 ######################
 /log/
 /target/
+./target
+/target/**
 ######################
 # Gradle
 ######################
