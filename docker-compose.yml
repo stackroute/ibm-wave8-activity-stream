@@ -10,6 +10,7 @@ services:
       - as-upstream-streaming
       - kafka
       - zookeeper
+      - feedservice
     healthcheck:
       test: "exit 0"
 
@@ -111,6 +112,7 @@ services:
     depends_on:
       - kafka
       - zookeeper
+      - feedservice
     healthcheck:
       test: "exit 0"
 
@@ -121,7 +123,6 @@ services:
     network_mode: host
     hostname: localhost
     depends_on:
-      - as-ibm-domain
       - kafka
       - zookeeper
     healthcheck:
@@ -150,6 +151,7 @@ services:
       - as-sentiment-analysis
       - kafka
       - zookeeper
+      - feedservice
     healthcheck:
       test: "exit 0"
 
