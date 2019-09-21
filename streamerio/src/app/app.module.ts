@@ -4,7 +4,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HomeComponent } from './home/home.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatNativeDateModule, MatDatepickerModule, MatIconModule, MatButtonModule, MatCheckboxModule, MatToolbarModule, MatCardModule, MatFormFieldModule, MatInputModule, MatRadioModule, MatListModule } from '@angular/material';
 import { MatTooltipModule } from '@angular/material/tooltip';
@@ -27,7 +26,6 @@ import { RealTimeOrganisationChartComponent } from './real-time-organisation-cha
   declarations: [
     AppComponent,
     LoginComponent,
-    HomeComponent,
     PoliticalNDADashBoardComponent,
     RealTimegraphComponent,
     BarChartComponent,

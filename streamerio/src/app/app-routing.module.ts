@@ -11,14 +11,10 @@ const routes: Routes = [
     path: '', component: LoginComponent
   },
   {
-    //path:'home',component:HomeComponent,canActivate: [AuthGuard]
-    path: 'home', component: HomeComponent
+    path: 'political', component: PoliticalNDADashBoardComponent,canActivate: [AuthGuard]
   },
   {
-    path: 'political', component: PoliticalNDADashBoardComponent
-  },
-  {
-    path: 'organisation', component: OrganisationIbmDashboardComponent
+    path: 'organisation', component: OrganisationIbmDashboardComponent,canActivate: [AuthGuard]
   }
 ];
 
