@@ -50,6 +50,8 @@ local.properties
 *.ipr
 *.ids
 *.orig
+.idea/*
+.idea/compiler.xml
 ######################
 # Visual Studio Code
 ######################
@@ -61,6 +63,7 @@ local.properties
 /target/
 ./target
 /target/**
+*/target
 ######################
 # Gradle
 ######################

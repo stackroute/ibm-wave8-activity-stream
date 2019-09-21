@@ -12,4 +12,4 @@ RUN npm run build
 
 WORKDIR /app/dist/streamerio
 
-CMD ["http-server", "-c1", "--port", "8080"]
+CMD ["http-server", "-c1", "-p", "8080"]

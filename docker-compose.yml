@@ -24,25 +24,27 @@ services:
       ZOO_SERVERS: server.1=zoo1:2888:3888
 
   kafka:
-      image: wurstmeister/kafka
-      network_mode: host
-      ports:
-        - "9092"
-      depends_on:
-        - zookeeper
-      environment:
-        KAFKA_ADVERTISED_HOST_NAME: localhost
-        KAFKA_ZOOKEEPER_CONNECT: localhost:2181
-        # KAFKA_CREATE_TOPICS: "tweet1:1:1,raw:1:1:compact,tweet2:1:1,tweet3:1:1,tweet4:1:1,ibmtweet:1:1,socket:1:1,mail:1:1"
+    image: wurstmeister/kafka
+    network_mode: host
+    ports:
+      - "9092"
+    depends_on:
+      - zookeeper
+    environment:
+      KAFKA_ADVERTISED_HOST_NAME: localhost
+      KAFKA_ZOOKEEPER_CONNECT: localhost:2181
+      # KAFKA_CREATE_TOPICS: "tweet1:1:1,raw:1:1:compact,tweet2:1:1,tweet3:1:1,tweet4:1:1,ibmtweet:1:1,socket:1:1,mail:1:1"
 
-  mysql: 
-    image: mysql
+  mysql:
+    image: mysql:5.7
     network_mode: host
     environment:
-       MYSQL_ROOT_PASSWORD : Root@123
-       MYSQL_DATABASE : db
-      
-  as-web-login-auth: 
+      MYSQL_ROOT_PASSWORD : Root@123
+      MYSQL_DATABASE : db
+    volumes:
+      - /data-docker/docker/mysqlAS:/var/lib/mysql
+
+  as-web-login-auth:
     build: as-web-login-auth
     network_mode: host
     restart: always
@@ -67,14 +69,12 @@ services:
       test: "exit 0"
 
   cassandra:
-    image: 'bitnami/cassandra:3'
+    image: cassandra
     network_mode: host
     ports:
       - '9042:9042'
-    environment:
-      - CASSANDRA_SEEDS=cassandra
-      - CASSANDRA_PASSWORD_SEEDER=yes
-      - CASSANDRA_PASSWORD=cassandra
+    volumes:
+      - /data-docker/cassandraAS:/var/lib/cassandra
 
   as-ibm-domain:
     build: as-ibm-domain
@@ -88,7 +88,7 @@ services:
       - zookeeper
     healthcheck:
       test: "exit 0"
-  
+
   as-sentiment-analysis:
     build: as-sentiment-analysis
     container_name: as-sentiment-analysis-service-container
@@ -101,7 +101,7 @@ services:
       - zookeeper
     healthcheck:
       test: "exit 0"
-  
+
   as-upstream-streaming:
     build: as-upstream-streaming
     container_name: as-upstream-streaming-service-container
@@ -113,7 +113,7 @@ services:
       - zookeeper
     healthcheck:
       test: "exit 0"
-  
+
   feedservice:
     build: feedservice
     container_name: feed-service-container
@@ -152,7 +152,7 @@ services:
       - zookeeper
     healthcheck:
       test: "exit 0"
-  
+
   streamerio:
     build: streamerio
     container_name: streamerio
