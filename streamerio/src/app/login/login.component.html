@@ -1,27 +1,31 @@
-<mat-toolbar id="navbar">
-  <mat-toolbar-row>
-     <span><a href="/">Activity Stream</a></span>
-  </mat-toolbar-row>
-</mat-toolbar>
-<div class="center">
-  <mat-toolbar>
-      <span id="header">Login</span>
+     <mat-toolbar id="navbar">
+    <mat-toolbar-row>
+       <span>Activity Stream</span>
+    </mat-toolbar-row>
   </mat-toolbar>
-  <mat-card class="my-card">
-    <mat-card-content>
-      <form class="my-form">
-        <mat-form-field class="full-width">
-          <mat-label>Username</mat-label>
-            <input [(ngModel)]="username"  matInput  placeholder="Username"  name="username" type="text" required>
-        </mat-form-field>
-        <mat-form-field class="full-width">
-            <mat-label>Password</mat-label>
-              <input [(ngModel)]="password"  matInput  placeholder="Password" name="password" type="password" required>
-        </mat-form-field>
-      </form>    
-    </mat-card-content>
-    <mat-card-actions>
-      <button mat-raised-button (click)="login()" color="primary">LOGIN</button>
-    </mat-card-actions>
-    </mat-card>
-  </div>
+
+<div class="container">
+ <div class="row valign-wrapper">
+    
+<mat-card class="item-card animated pulse" >
+  <mat-card-content >
+       <h3><strong>LOGIN</strong></h3>
+         <div class="example-container">
+           <mat-form-field>
+                 <input [(ngModel)]="username"  matInput placeholder="Username" name="username" type="text" required>
+             </mat-form-field>
+             <mat-form-field>
+                 <input [(ngModel)]="password"  matInput placeholder="Password" name="password" type="password" required>
+               </mat-form-field>
+                   </div>
+                   <span class="errorMessage" *ngIf="invalidLogin">Either yor email or password is incorrect</span>
+                   
+                   <mat-card-actions>
+                      <button mat-raised-button (click)="login()" color="primary">LOGIN</button>
+                   </mat-card-actions>
+
+   </mat-card-content>
+  
+ </mat-card>
+ </div>
+ </div>

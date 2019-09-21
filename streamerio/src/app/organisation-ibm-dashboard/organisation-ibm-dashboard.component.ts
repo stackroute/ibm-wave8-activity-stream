@@ -67,32 +67,32 @@ export class OrganisationIbmDashboardComponent implements OnInit {
 }
 populatePieChartData(data){
   let general=0
-  let health=0
-  let finance=0
-  let foreign=0
+  let hr=0
+  let product=0
+  let marketing=0
   let labels=[]
   let plotData=new Array(labels.length)
   data.map(e=>{
     if(labels.indexOf(e.subdomain) ==-1){
       labels.push(e.subdomain);
     }
-    if(e.subdomain == "Political General"){
-      general++
-    }else if(e.subdomain == "health"){
-      health++
+    if(e.subdomain == "HUMAN RESOURCES"){
+      hr++
+    }else if(e.subdomain == "Products And Services"){
+      product++
     }
-    else if(e.subdomain == "finance"){
-      finance++
-    }else if(e.subdomain == "foreign"){
-      foreign++
+    else if(e.subdomain == "Marketing"){
+      marketing++
+    }else if(e.subdomain == "General"){
+      general++
     }    
 })
 console.log(labels)
-console.log(general,health,finance,foreign)
+console.log(general,hr,product,marketing)
 
 this.pieChartData.next({
-plotData:[health,finance,general,foreign],
-labels : labels,
+plotData:[hr,product,marketing,general],
+labels : ["Human Resource","Producta & Services","Marketing","General"],
 }) 
 }
 logout() {
