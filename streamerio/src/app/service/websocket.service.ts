@@ -10,7 +10,7 @@ import { Subject } from 'rxjs';
 })
 export class WebsocketService {
 
-  private serverUrl = 'http://localhost:9098/websocket-example';
+  private serverUrl = 'http://13.235.223.235:9098/websocket-example';
   private title = 'WebSockets chat';
   private stompClient;
   public PoliticalSuject = new Subject();
@@ -21,6 +21,7 @@ export class WebsocketService {
    }
 
   initializeWebSocketConnection(){
+    console.log("here", this.serverUrl)
     let ws = new SockJS(this.serverUrl);
     this.stompClient = Stomp.over(ws);
     let that = this;

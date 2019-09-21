@@ -21,7 +21,7 @@ export class RealTimegraphComponent implements OnInit, AfterViewInit {
     }
 
     ngAfterViewInit() {
-        this.socket.initializeWebSocketConnection();
+        // this.socket.initializeWebSocketConnection();
         this.socket.PoliticalSuject.subscribe((data: any) => {
             console.log(data, "????????")
             data = JSON.parse(data)

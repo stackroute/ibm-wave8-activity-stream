@@ -9,6 +9,7 @@
         <module name="as-upstream-streaming" />
         <module name="as-ibm-domain" />
         <module name="politicalDomain" />
+        <module name="twitterAdapter (1)" />
         <module name="Login-Authentication-Microservice" />
         <module name="as-downstream-save" />
         <module name="spring-boot-websocket-example" />
@@ -17,7 +18,6 @@
         <module name="NotifyService" />
         <module name="as-sentiment-analysis" />
         <module name="mainapp" />
-        <module name="twitterAdapter" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -32,7 +32,8 @@
       <module name="NotifyService" target="11" />
       <module name="politicalDomain" target="11" />
       <module name="spring-boot-websocket-example" target="11" />
-      <module name="twitterAdapter" target="1.7" />
+      <module name="twitterAdapter" target="1.5" />
+      <module name="twitterAdapter (1)" target="1.7" />
       <module name="User-Registration" target="8" />
     </bytecodeTargetLevel>
   </component>
