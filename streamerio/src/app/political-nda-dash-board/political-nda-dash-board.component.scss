@@ -1,4 +1,11 @@
 
+.spacer {
+  flex: 1 1 auto;
+}
+
+
+ @media (min-width: 1281px) {
+
   .navbar {
     overflow: hidden;
     background-color:rgb(26, 24, 155);
@@ -18,12 +25,43 @@
     margin-left: 5rem;
     margin-right: 5rem;
 }
-
-
 .child-layout-1 {
     display: flex;
-    justify-content: space-around;
-   
+    justify-content: space-around;  
 }
 
+ }
+
+
+ @media (min-width: 1025px) and (max-width: 1280px) {
+  
+  //CSS
+
+
+  .navbar {
+    overflow: hidden;
+    background-color:rgb(26, 24, 155);
+    position: fixed;
+    top: 0;
+    display:flex;
+    overflow-x:hidden;
+    flex: 1 1 auto;
+    z-index:9;
+  }
+
+.parent-layout {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-top: 3rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+.child-layout-1 {
+    display: flex;
+    justify-content: space-around;  
+}
+
+  
+}
 

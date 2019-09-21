@@ -37,7 +37,6 @@ export class PieChartComponent implements OnInit {
              },
              
   } 
-
   console.log(inputData.plotData)
   this.piechart = new Chart('pie', plot);
   
