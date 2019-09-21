@@ -1,4 +1,4 @@
-package com.techprimers.springbootwebsocketexample.config;
+package com.stackroute.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.messaging.simp.config.MessageBrokerRegistry;
@@ -12,6 +12,7 @@ public class WebSocketConfig extends AbstractWebSocketMessageBrokerConfigurer {
     @Override
     public void registerStompEndpoints(StompEndpointRegistry stompEndpointRegistry) {
         stompEndpointRegistry.addEndpoint("/websocket-example")
+                .setAllowedOrigins("*")
                 .withSockJS();
     }
 

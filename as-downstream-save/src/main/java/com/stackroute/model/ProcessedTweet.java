@@ -12,7 +12,7 @@ import org.springframework.data.cassandra.core.mapping.Table;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-@Table("processedTweet")
+@Table("processedFinalTweet")
 public class ProcessedTweet {
     @Column("timestamp")
     private String timeStamp;
@@ -32,4 +32,6 @@ public class ProcessedTweet {
     SentimentResult sentimentResult;
     @Column("domain")
     String domain;
+    @Column("subdomain")
+    String subDomain;
 }

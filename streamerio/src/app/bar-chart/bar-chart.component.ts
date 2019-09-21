@@ -1,36 +1,73 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnChanges, Input } from '@angular/core';
 import * as Chart from 'chart.js';
+import { Subject } from 'rxjs';
 @Component({
   selector: 'app-bar-chart',
   templateUrl: './bar-chart.component.html',
   styleUrls: ['./bar-chart.component.scss']
 })
 export class BarChartComponent implements OnInit {
-barchart:any
-  constructor() { }
+  
+ 
+  barChart: any;
+  
+  constructor() { 
+    
+  }
 
+  @Input()
+  data: any;
+  
   ngOnInit() {
-    this.barchart=new Chart('bar',
-       {
-         type:'bar',
-         options:{
-           responsive:true,
+    let inputData = {
+      ymax: 0,
+      ymin: 0,
+      lables: [],
+      xAxisData: [],
+
+    }
+    this.data.subscribe(data => {
+        inputData = data
+        console.log(data)
+        let plot = {
+          type: 'bar',
+          options: {
+            scales: {
+              xAxes:[
+                {
+                  gridLines:{
+                    display:false,
+                  },
+                }
+              ],
+              yAxes: [{
+                ticks: {
+                  max: inputData.ymax,
+                  min: inputData.ymin,
+                  stepSize: 1
+                },
+              }]
+            },
+            responsive: true,
           },
-          data:{
-            labels:['very negative','negative','neutral','positive','very positive'],
-            datasets:[
+          data: {
+            labels: inputData.lables,
+            datasets: [
               {
-                type:'bar',
-                label:'sentiment score',
-                data:[443,256,165,1000,356],
-                backgroundColor:'rgba(255,0,255,0.4)',
-                fill:false,
+                type: 'bar',
+                label: 'sentiment score',
+                data: inputData.xAxisData.filter(e => e !== 0),
+                backgroundColor: 'rgba(244,67,54)',
+                fill: false,
               }
             ]
           },
-          
-       },
-       );
+        }
+        console.log(inputData.xAxisData)
+        this.barChart = new Chart('bar', plot);
+    })
+    
+    
   }
 
 }

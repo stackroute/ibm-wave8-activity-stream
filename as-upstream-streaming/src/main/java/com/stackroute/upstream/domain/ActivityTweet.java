@@ -3,6 +3,8 @@ package com.stackroute.upstream.domain;
 import lombok.*;
 import org.springframework.stereotype.Service;
 
+import java.sql.Timestamp;
+
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
@@ -15,6 +17,7 @@ public class ActivityTweet {
    private TwitterActor actor;
    private String content;
    private MyCustomTweet object;
+
 
 
 }

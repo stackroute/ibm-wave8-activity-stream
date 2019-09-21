@@ -44,6 +44,12 @@ linechart:any
         //         tension: 0 // disables bezier curves
         //     }
         // },
+        legend:{
+          position:'right',
+          labels:{
+            padding:30,
+          },
+        },
           responsive:true,
           tooltips:{
             mode:'index',
@@ -55,7 +61,9 @@ linechart:any
           },
           scales:{
             xAxes:[{
-                display:true,
+              gridLines:{
+                display:false,
+              },
                 scaleLabel:{
                   display:true,
                   labelString:'Month'

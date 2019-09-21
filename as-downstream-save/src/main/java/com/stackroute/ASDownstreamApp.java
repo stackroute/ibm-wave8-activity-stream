@@ -10,7 +10,8 @@ import javax.annotation.PostConstruct;
 //@Import({ASUpstreamApp.class})
 //@EnableCassandraRepositories
 public class ASDownstreamApp {
-	public static void main(String[] args) {
+	public static void main(String[] args)
+	{
 		SpringApplication.run(ASDownstreamApp.class, args);
 	}
 

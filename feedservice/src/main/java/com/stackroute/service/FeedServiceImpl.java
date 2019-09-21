@@ -1,8 +1,6 @@
-package com.techprimers.springbootwebsocketexample.service;
+package com.stackroute.service;
 
-import com.techprimers.springbootwebsocketexample.model.ActivityTweet;
-import com.techprimers.springbootwebsocketexample.model.MyCustomTweet;
-import com.techprimers.springbootwebsocketexample.model.TwitterActor;
+import com.stackroute.model.ActivityTweet;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -20,8 +18,8 @@ public class FeedServiceImpl implements FeedService {
         activityTweet1.setContent(activityTweet.getContent());
         activityTweet1.setObject(activityTweet.getObject());
         activityTweet1.setVerb(activityTweet.getVerb());
-
-
+        activityTweet1.setDomain(activityTweet.getDomain());
+        activityTweet1.setSubdomain(activityTweet.getSubdomain());
 
         return activityTweet1;
     }

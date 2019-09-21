@@ -1,7 +1,8 @@
-package com.techprimers.springbootwebsocketexample.resource;
+package com.stackroute.resource;
 
-import com.techprimers.springbootwebsocketexample.model.User;
-import com.techprimers.springbootwebsocketexample.model.UserResponse;
+
+import com.stackroute.model.User;
+import com.stackroute.model.UserResponse;
 import org.springframework.messaging.handler.annotation.MessageMapping;
 import org.springframework.messaging.handler.annotation.SendTo;
 import org.springframework.stereotype.Controller;

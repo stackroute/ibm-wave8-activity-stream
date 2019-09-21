@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
 import * as Chart from 'chart.js';
 @Component({
   selector: 'app-pie-chart',
@@ -6,33 +6,43 @@ import * as Chart from 'chart.js';
   styleUrls: ['./pie-chart.component.scss']
 })
 export class PieChartComponent implements OnInit {
-piechart:any
-  constructor() { }
-
+   piechart:any
+  constructor() { 
+    
+  }
+  @Input()
+  data: any
   ngOnInit() {
-   this.piechart=new Chart('pie',
-    {
+   
+    let inputData={
+      labels: [],
+      plotData: [],
+    }
+  this.data.subscribe(data =>{
+    inputData=data
+    console.log(data)
+    let plot={
       type:'pie',
       options:{
-        responsive:true,
-       legend:{
-         position:'top',},
-         animation:{
-           animateScale:true,
-           animateRotate:true
-         }
-       },
-       data:{
-         datasets:[{
-           data:[45,30,50,25,15],
-           backgroundColor:["red","orange","brown","green","blue"],
-           label:'dataset'
-         }],
-         labels:['Human Resource','Finance','Health','External Affairs','General']
-       }
-      
-    })
-}
+        legend:{
+          position:'right' as 'right'
+        }
+      },
+          data:{
+              labels:inputData.labels,
+               datasets:[{
+                 data:inputData.plotData,
+                 backgroundColor:["red","orange","green","blue"],
+               }],
+             },
+             
+  } 
+
+  console.log(inputData.plotData)
+  this.piechart = new Chart('pie', plot);
+  
+  })
+  }
 
   }
 

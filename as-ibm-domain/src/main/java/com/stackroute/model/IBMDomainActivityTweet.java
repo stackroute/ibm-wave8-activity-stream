@@ -18,4 +18,5 @@ public class IBMDomainActivityTweet {
     private MyCustomTweet object;
     private SentimentResult sentimentResult;
     private String domain;
+    private String subDomain;
 }

@@ -1,5 +1,5 @@
-package com.techprimers.springbootwebsocketexample.config;
-import com.techprimers.springbootwebsocketexample.model.ActivityTweet;
+package com.stackroute.config;
+import com.stackroute.model.ActivityTweet;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.common.serialization.StringDeserializer;
 import org.springframework.context.annotation.Bean;

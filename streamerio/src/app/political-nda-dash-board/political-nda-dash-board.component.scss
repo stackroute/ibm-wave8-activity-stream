@@ -1,8 +1,4 @@
 
-.spacer {
-    flex: 1 1 auto;
-  }
-
   .navbar {
     overflow: hidden;
     background-color:rgb(26, 24, 155);
@@ -18,19 +14,15 @@
     display: flex;
     flex-direction: column;
     height: 100%;
+    margin-top: 3rem;
     margin-left: 5rem;
     margin-right: 5rem;
 }
 
-// .parent-layout > app-real-timegraph {
-//     height: 400px;
-// }
 
 .child-layout-1 {
     display: flex;
     justify-content: space-around;
-    margin-left: 5rem;
-    margin-right: 5rem;
    
 }
 

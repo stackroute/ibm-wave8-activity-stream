@@ -15,6 +15,7 @@
       <module fileurl="file://$PROJECT_DIR$/politicalDomain/politicalDomain.iml" filepath="$PROJECT_DIR$/politicalDomain/politicalDomain.iml" />
       <module fileurl="file://$PROJECT_DIR$/feedservice/spring-boot-websocket-example.iml" filepath="$PROJECT_DIR$/feedservice/spring-boot-websocket-example.iml" />
       <module fileurl="file://$PROJECT_DIR$/twitterAdapter/twitterAdapter.iml" filepath="$PROJECT_DIR$/twitterAdapter/twitterAdapter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../twitterAdapter/twitterAdapter (1).iml" filepath="$PROJECT_DIR$/../twitterAdapter/twitterAdapter (1).iml" />
     </modules>
   </component>
 </project>

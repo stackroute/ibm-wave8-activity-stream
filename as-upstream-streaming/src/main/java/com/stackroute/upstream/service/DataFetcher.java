@@ -54,7 +54,7 @@ public class DataFetcher {
                         if(tweet.getLang().equals("en"))
                         {
                             Activity activity =  activity()
-                                    .verb("TWEET")
+                                    .verb("NDA")
                                     .content(tweet.getText())
                                     .object(object("tweet").id(tweet.getId_str()))
                                     .actor(object("person").id(tweet.getUser().getName()).displayName(tweet.getUser().getScreen_name()))
@@ -64,11 +64,11 @@ public class DataFetcher {
                             UUID uuid=UUID.randomUUID();
                             as_tweet.setUuid(uuid.toString());
                             as_tweet.setTimeStamp(tweet.getTimestamp_ms());
-                            if(domain.equals("India"))
+                            if(domain.equals("Politics"))
 
                                 System.out.println("Indiaaaaaaaaaaaaaaaaaaaaaaaa  "+as_tweet.toString());
-                            else if(domain.equals("Pakistan"))
-                                System.out.println("IBMMMMMMMMMMMMMMMM:- "+as_tweet.toString());
+                            else if(domain.equals("IBM"))
+                                System.out.println("Tech companies:- "+as_tweet.toString());
 
 
 //                          ActivityTweet activityTweet=new ActivityTweet();

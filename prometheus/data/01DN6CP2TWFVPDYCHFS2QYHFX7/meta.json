@@ -1,0 +1,17 @@
+{
+	"ulid": "01DN6CP2TWFVPDYCHFS2QYHFX7",
+	"minTime": 1568916000000,
+	"maxTime": 1568923200000,
+	"stats": {
+		"numSamples": 5825,
+		"numSeries": 40,
+		"numChunks": 80
+	},
+	"compaction": {
+		"level": 1,
+		"sources": [
+			"01DN6CP2TWFVPDYCHFS2QYHFX7"
+		]
+	},
+	"version": 1
+}

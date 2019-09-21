@@ -1,5 +1,6 @@
-package com.techprimers.springbootwebsocketexample.model;
-
+package com.stackroute.model;
+import com.stackroute.model.TwitterActor;
+import com.stackroute.model.MyCustomTweet;
 import lombok.*;
 
 @Data
@@ -8,12 +9,13 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 public class ActivityTweet {
-    String timeStamp;
-    String uuid;
-    String verb;
-    TwitterActor actor;
-    String content;
-    MyCustomTweet object;
-
-
+    private String timeStamp;
+    private String uuid;
+    private String verb;
+    private TwitterActor actor;
+    private String content;
+    private MyCustomTweet object;
+    private SentimentResult sentimentResult;
+    private String domain;
+    private String subdomain;
 }

@@ -1,4 +1,4 @@
-package com.techprimers.springbootwebsocketexample.model;
+package com.stackroute.model;
 
 
 import lombok.*;
