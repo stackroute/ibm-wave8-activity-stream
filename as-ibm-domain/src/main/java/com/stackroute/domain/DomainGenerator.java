@@ -40,8 +40,51 @@ public class DomainGenerator {
             "IBM Watson",
             "Cloud Services"
             };
-    String[] Marketing={};
-String[] Learning={};
+    String[] Marketing={"Supplier","Influencer","Recruitment","Internal","referral","Business to Business"
+                        ,"Business to Consumer","Consumer to Business","Consumer to Consumer",
+                        "Content Marketing","Search Engine Marketing","Direct Marketing",
+                            "Database Marketing","Social Media Marketing","Product Marketing," ,
+                        "Functional oriented marketing organization","Product oriented marketing organization"
+                        ,"Customer oriented marketing organization",
+                            "implementation","internal control","quantitative analysis"
+                        ,"promotional material","enhancement","pricing","optimize"
+                        ,"profitability","promotional","analytical","maximize","return on investment",
+                            "deadline","pertinent","forecasting","metric","market research","servicing",
+                        "advertise","operational","motivate","brand","delivery","timely","innovate",
+                        "regulator","advertising agency","initiative","co-ordinate","oversee",
+                    "stategic","tracking","organizational","accountability",};
+String[] Learning={"Information" +
+        "Knowledge" ,
+        "Skills" ,
+        "Abilities" ,
+        "Perceptions" ,
+        "Task" ,
+        "Job" ,
+        "Role" ,
+        "Learning" ,
+        "Continuous Learning" ,
+        "Training" ,
+        "Education" ,
+        "Development" ,
+        "Additional Information",
+    "Benefits & Compensation" ,
+            "Diversity & Inclusion" ,
+            "Employee Communications" ,
+            "Employee Relations" ,
+            "Human Resource Information Systems (HRIS)" ,
+            "Job Analysis" ,
+            "Labor & Union Negotiations" ,
+            "Leadership Development" ,
+            "Manpower Planning" ,
+            "Onboarding" ,
+            "Organizational Development" ,
+            "Performance Management" ,
+            "Recruitment" ,
+            "Retention" ,
+            "Staffing" ,
+            "Succession Planning" ,
+            "Talent Development" ,
+            "Training & Development"};
     /*for (int i=0;i<textToArray.length;i++)
     {
       for (int j=0;j<departments.length;j++)
@@ -76,13 +119,23 @@ String[] Learning={};
 
     if (flag == false) {
       for (int i = 0; i < Marketing.length; i++) {
-        if (text.toLowerCase().contains(ProductAndServices[i].toLowerCase())) {
+        if (text.toLowerCase().contains(Marketing[i].toLowerCase())) {
           domain = "Marketing";
           flag = true;
           break;
         }
       }
     }
+
+      if (flag == false) {
+          for (int i = 0; i < Learning.length; i++) {
+              if (text.toLowerCase().contains(Learning[i].toLowerCase())) {
+                  domain = "Learning";
+                  flag = true;
+                  break;
+              }
+          }
+      }
     if (domain == "") {
       domain = "General";
     }
