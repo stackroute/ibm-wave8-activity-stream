@@ -31,35 +31,35 @@ scrape_configs:
   - job_name: 'upstream'
     metrics_path: 'actuator/prometheus'
     static_configs:
-    - targets: ['172.23.238.170:8082']
+    - targets: ['13.235.223.235:8082']
   - job_name: 'feedservice'
     metrics_path: 'actuator/prometheus'
     static_configs:
-    - targets: ['172.23.238.170:8091']
+    - targets: ['13.235.223.235:8091']
   - job_name: 'mailservice'
     metrics_path: 'actuator/prometheus'
     static_configs:
-    - targets: ['172.23.238.170:8083']
+    - targets: ['13.235.223.235:8083']
   - job_name: 'political-domain'
     metrics_path: 'actuator/prometheus'
     static_configs:
-    - targets: ['172.23.238.170:9096'] 
+    - targets: ['13.235.223.235:9096'] 
   - job_name: 'data-cleaning'
     metrics_path: 'actuator/prometheus'
     static_configs:
-    - targets: ['172.23.238.170:8090']
+    - targets: ['13.235.223.235:8090']
   - job_name: 'sentimental-analysis'
     metrics_path: 'actuator/prometheus'
     static_configs:
-    - targets: ['172.23.238.170:8099']
+    - targets: ['13.235.223.235:9011']
   - job_name: 'downstream-save'
     metrics_path: 'actuator/prometheus'
     static_configs:
-    - targets: ['172.23.238.170:8081']
+    - targets: ['13.235.223.235:8081']
   - job_name: 'ibm-domain'
     metrics_path: 'actuator/prometheus'
     static_configs:
-    - targets: ['172.23.238.170:8098']
+    - targets: ['13.235.223.235:9012']
   
 
     

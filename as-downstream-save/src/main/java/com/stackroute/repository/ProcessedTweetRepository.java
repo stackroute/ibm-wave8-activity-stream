@@ -10,9 +10,9 @@ import java.util.List;
 @Repository
 public interface ProcessedTweetRepository extends CrudRepository<ProcessedTweet,String> {
 
-    @Query("select * from processedfinaltweet WHERE domain='IBM' limit 5 ALLOW FILTERING")
+    @Query("select * from processedfinaltweet WHERE domain='IBM' limit 10000 ALLOW FILTERING")
     public List<ProcessedTweet> getAll();
 
-    @Query("select * from processedfinaltweet where domain='Politics' limit 5 ALLOW FILTERING")
+    @Query("select * from processedfinaltweet where domain='Politics' limit 10000 ALLOW FILTERING")
     public List<ProcessedTweet> getPoliticalTweets();
 }
