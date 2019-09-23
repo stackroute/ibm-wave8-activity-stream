@@ -2,19 +2,19 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/as-data-cleaning/Data-Cleaning.iml" filepath="$PROJECT_DIR$/as-data-cleaning/Data-Cleaning.iml" />
-      <module fileurl="file://$PROJECT_DIR$/as-web-login-auth/Login-Authentication-Microservice.iml" filepath="$PROJECT_DIR$/as-web-login-auth/Login-Authentication-Microservice.iml" />
-      <module fileurl="file://$PROJECT_DIR$/notifyService/NotifyService.iml" filepath="$PROJECT_DIR$/notifyService/NotifyService.iml" />
-      <module fileurl="file://$PROJECT_DIR$/as-web-registration/User-Registration.iml" filepath="$PROJECT_DIR$/as-web-registration/User-Registration.iml" />
-      <module fileurl="file://$PROJECT_DIR$/activity-stream-app.iml" filepath="$PROJECT_DIR$/activity-stream-app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/as-downstream-save/as-downstream-save.iml" filepath="$PROJECT_DIR$/as-downstream-save/as-downstream-save.iml" />
-      <module fileurl="file://$PROJECT_DIR$/as-ibm-domain/as-ibm-domain.iml" filepath="$PROJECT_DIR$/as-ibm-domain/as-ibm-domain.iml" />
-      <module fileurl="file://$PROJECT_DIR$/as-sentiment-analysis/as-sentiment-analysis.iml" filepath="$PROJECT_DIR$/as-sentiment-analysis/as-sentiment-analysis.iml" />
-      <module fileurl="file://$PROJECT_DIR$/as-upstream-streaming/as-upstream-streaming.iml" filepath="$PROJECT_DIR$/as-upstream-streaming/as-upstream-streaming.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mainapp/mainapp.iml" filepath="$PROJECT_DIR$/mainapp/mainapp.iml" />
-      <module fileurl="file://$PROJECT_DIR$/politicalDomain/politicalDomain.iml" filepath="$PROJECT_DIR$/politicalDomain/politicalDomain.iml" />
-      <module fileurl="file://$PROJECT_DIR$/feedservice/spring-boot-websocket-example.iml" filepath="$PROJECT_DIR$/feedservice/spring-boot-websocket-example.iml" />
-      <module fileurl="file://$PROJECT_DIR$/twitterAdapter/twitterAdapter.iml" filepath="$PROJECT_DIR$/twitterAdapter/twitterAdapter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../as-data-cleaning/Data-Cleaning.iml" filepath="$PROJECT_DIR$/../as-data-cleaning/Data-Cleaning.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../as-web-login-auth/Login-Authentication-Microservice.iml" filepath="$PROJECT_DIR$/../as-web-login-auth/Login-Authentication-Microservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../notifyService/NotifyService.iml" filepath="$PROJECT_DIR$/../notifyService/NotifyService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../as-web-registration/User-Registration.iml" filepath="$PROJECT_DIR$/../as-web-registration/User-Registration.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../activity-stream-app.iml" filepath="$PROJECT_DIR$/../activity-stream-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../as-downstream-save/as-downstream-save.iml" filepath="$PROJECT_DIR$/../as-downstream-save/as-downstream-save.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../as-ibm-domain/as-ibm-domain.iml" filepath="$PROJECT_DIR$/../as-ibm-domain/as-ibm-domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../as-sentiment-analysis/as-sentiment-analysis.iml" filepath="$PROJECT_DIR$/../as-sentiment-analysis/as-sentiment-analysis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../as-upstream-streaming/as-upstream-streaming.iml" filepath="$PROJECT_DIR$/../as-upstream-streaming/as-upstream-streaming.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../mainapp/mainapp.iml" filepath="$PROJECT_DIR$/../mainapp/mainapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../politicalDomain/politicalDomain.iml" filepath="$PROJECT_DIR$/../politicalDomain/politicalDomain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../feedservice/spring-boot-websocket-example.iml" filepath="$PROJECT_DIR$/../feedservice/spring-boot-websocket-example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../twitterAdapter/twitterAdapter.iml" filepath="$PROJECT_DIR$/../twitterAdapter/twitterAdapter.iml" />
       <module fileurl="file://$PROJECT_DIR$/../twitterAdapter/twitterAdapter (1).iml" filepath="$PROJECT_DIR$/../twitterAdapter/twitterAdapter (1).iml" />
     </modules>
   </component>
