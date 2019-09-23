@@ -12,8 +12,16 @@ public class KafkaConsumer {
 
     @KafkaListener(topics = "socket")
     public void consume(ActivityTweet activityTweet) {
+	
         try {
-         template.convertAndSend("/topic/user", activityTweet);
+	System.out.println("------------------ Consumed message:******************* " + activityTweet);
+               if(activityTweet.getDomain().equals("Political") || activityTweet.getDomain().equals("Politics")) {
+                   template.convertAndSend("/topic/PoliticalDomainNda", activityTweet);
+               }
+               else if(activityTweet.getDomain().equals("Organisation") || activityTweet.getDomain().equals("IBM")){
+                   template.convertAndSend("/topic/OrganizationDomainIbm",activityTweet);
+               }
+		template.convertAndSend("/topic/user",activityTweet);
 
         }catch(Exception e) {
             e.printStackTrace();

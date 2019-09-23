@@ -27,6 +27,7 @@ public class KafkaConfig {
         config.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
         config.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, deserializer);
         config.put(JsonDeserializer.TRUSTED_PACKAGES, "*");
+	config.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "earliest");
         return new DefaultKafkaConsumerFactory<>(config, new StringDeserializer(), deserializer);
     }
     @Bean
